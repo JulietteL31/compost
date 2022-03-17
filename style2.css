@@ -1,0 +1,366 @@
+body {
+  background-color: rgba(0, 128, 0, 0.548);
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-header {
+  width: 5%;
+}
+
+.titre-header {
+  font-family: "Shrikhand";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+.fleche {
+  width: 50px;
+  height: 50px;
+}
+
+.image-header {
+  width: 5rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-compost {
+  width: 12rem;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-fb, .logo-mail {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.mail, .fb {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.fb {
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mail {
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.p-footer {
+  text-decoration: underline;
+}
+
+.img-ok {
+  width: 20rem;
+}
+
+.img-non {
+  width: 10rem;
+}
+
+.titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre-ok, .titre-non, .titre-geste {
+  margin-top: -20px;
+  font-size: 25px;
+}
+
+.oui, .non {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.cercle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.ok {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 25%;
+  margin: 30px;
+}
+
+.image-ok {
+  width: 100px;
+}
+
+.etape {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-content: center;
+  align-items: center;
+}
+
+.num {
+  border-radius: 100%;
+  background-color: seagreen;
+  color: white;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.des {
+  width: 60%;
+  background-color: seagreen;
+  border-radius: 30px;
+  margin-left: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#content1 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#content2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.contenu {
+  background-color: white;
+  display: flex;
+  width: 30%;
+  margin: 70px;
+  border-radius: 20px;
+  align-items: center;
+  align-content: center;
+  box-shadow: black 1px 1px 7px;
+  padding: 20px;
+}
+
+.contenu2 {
+  background-color: white;
+  display: flex;
+  width: 50%;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+  align-items: center;
+  align-content: center;
+  box-shadow: black 1px 1px 7px;
+  padding: 20px;
+}
+
+.utilisation {
+  margin-left: 100px;
+}
+
+.betes {
+  margin-right: 100px;
+}
+
+.titre2 {
+  text-align: center;
+  color: green;
+  font-size: 30px;
+}
+
+.lien-accueil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-accueil {
+  width: 50px;
+  height: 50px;
+}
+
+.image-geste {
+  width: 10rem;
+}
+
+.tuto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.brasser, .verser {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  border: black solid;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.verser > h3 {
+  font-size: 25px;
+  align-self: center;
+}
+
+.brasser > h3 {
+  font-size: 25px;
+  align-self: center;
+}
+
+.verser > p {
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+.brasser > p {
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+.num > p {
+  margin-top: -1px;
+  padding-top: 10px;
+}
+
+.photo {
+  width: 200px;
+  height: 150px;
+}
+
+.photo-bete {
+  width: 200px;
+  height: 150px;
+  border-radius: 30px;
+}
+
+.section-bete {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.bete {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 60%;
+  margin: 30px;
+}
+
+.explication {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.photo-utilisation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.photo-utilisation-double {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 600px;
+}
+
+.photo-utilisation-seule {
+  width: 50%;
+  height: 300px;
+}
+
+.photo3 {
+  height: 560px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.photo1, .photo2 {
+  height: 300px;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.utilisation-paragraphe {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  width: 70%;
+  margin-left: 220px;
+}
+
+/*# sourceMappingURL=style2.css.map */
