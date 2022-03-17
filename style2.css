@@ -1,5 +1,7 @@
 body {
   background-color: rgba(0, 128, 0, 0.548);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 a {
@@ -11,6 +13,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 730px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.disposition-titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
 .img-header {
@@ -24,13 +39,60 @@ a {
   text-align: center;
   width: 90%;
 }
+@media screen and (max-width: 600px) {
+  .titre-header {
+    width: 100%;
+    margin-left: 0px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .titre-header {
+    font-size: 25px;
+  }
+}
 
 .fleche {
   width: 50px;
   height: 50px;
 }
+@media screen and (max-width: 600px) {
+  .fleche {
+    padding-right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .fleche {
+    width: 25px;
+    height: 25px;
+  }
+}
 
 .image-header {
+  width: 5rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 730px) {
+  .image-header {
+    display: none;
+  }
+}
+
+.img-media-query {
+  display: none;
+}
+@media screen and (max-width: 730px) {
+  .img-media-query {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.img-header-media {
   width: 5rem;
   margin-left: 50px;
   margin-right: 50px;
@@ -62,6 +124,12 @@ a {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 650px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .logo-fb, .logo-mail {
   width: 30px;
@@ -76,15 +144,38 @@ a {
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width: 650px) {
+  .mail, .fb {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 315px) {
+  .mail, .fb {
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
 
 .fb {
   justify-content: flex-end;
   margin-right: 20px;
 }
+@media screen and (max-width: 650px) {
+  .fb {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
 
 .mail {
   justify-content: flex-start;
   margin-left: 20px;
+}
+@media screen and (max-width: 650px) {
+  .mail {
+    margin-left: 0;
+    justify-content: center;
+  }
 }
 
 .p-footer {
@@ -93,6 +184,16 @@ a {
 
 .img-ok {
   width: 20rem;
+}
+@media screen and (max-width: 340px) {
+  .img-ok {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 260px) {
+  .img-ok {
+    width: 10rem;
+  }
 }
 
 .img-non {
@@ -105,9 +206,19 @@ a {
   align-items: center;
 }
 
+.titre > h2 {
+  text-align: center;
+}
+
 .titre-ok, .titre-non, .titre-geste {
   margin-top: -20px;
   font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .titre-ok, .titre-non, .titre-geste {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .oui, .non {
@@ -117,6 +228,11 @@ a {
   justify-content: center;
   width: 100%;
   margin-top: 100px;
+}
+@media screen and (max-width: 340px) {
+  .oui, .non {
+    margin-top: 50px;
+  }
 }
 
 .cercle {
@@ -137,9 +253,30 @@ a {
   width: 25%;
   margin: 30px;
 }
+@media screen and (max-width: 1080px) {
+  .ok {
+    width: 35%;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ok {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .ok {
+    width: 85%;
+  }
+}
 
 .image-ok {
   width: 100px;
+}
+@media screen and (max-width: 340px) {
+  .image-ok {
+    width: 70px;
+  }
 }
 
 .etape {
@@ -148,6 +285,11 @@ a {
   margin-bottom: 20px;
   align-content: center;
   align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .etape {
+    flex-direction: column;
+  }
 }
 
 .num {
@@ -160,6 +302,11 @@ a {
   margin-right: 20px;
   font-size: 30px;
 }
+@media screen and (max-width: 450px) {
+  .num {
+    margin-right: 0;
+  }
+}
 
 .des {
   width: 60%;
@@ -170,16 +317,39 @@ a {
   color: white;
   font-size: 20px;
 }
+@media screen and (max-width: 450px) {
+  .des {
+    margin-left: 0;
+    font-size: 17px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .des {
+    font-size: 15px;
+  }
+}
 
 #content1 {
   display: flex;
   align-items: center;
   margin-top: 100px;
 }
+@media screen and (max-width: 890px) {
+  #content1 {
+    flex-direction: column;
+  }
+}
 
 #content2 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 890px) {
+  #content2 {
+    flex-direction: column;
+  }
 }
 
 .contenu {
@@ -192,6 +362,16 @@ a {
   align-content: center;
   box-shadow: black 1px 1px 7px;
   padding: 20px;
+}
+@media screen and (max-width: 1010px) {
+  .contenu {
+    margin: 50px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .contenu {
+    width: 60%;
+  }
 }
 
 .contenu2 {
@@ -208,13 +388,33 @@ a {
   box-shadow: black 1px 1px 7px;
   padding: 20px;
 }
+@media screen and (max-width: 1010px) {
+  .contenu2 {
+    margin: 50px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .contenu2 {
+    width: 60%;
+  }
+}
 
 .utilisation {
   margin-left: 100px;
 }
+@media screen and (max-width: 890px) {
+  .utilisation {
+    margin-left: 50px;
+  }
+}
 
 .betes {
   margin-right: 100px;
+}
+@media screen and (max-width: 890px) {
+  .betes {
+    margin-right: 50px;
+  }
 }
 
 .titre2 {
@@ -246,6 +446,12 @@ a {
   align-items: flex-start;
   margin-top: 30px;
 }
+@media screen and (max-width: 950px) {
+  .tuto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .brasser, .verser {
   display: flex;
@@ -258,6 +464,11 @@ a {
   border: black solid;
   border-radius: 30px;
   padding: 10px;
+}
+@media screen and (max-width: 950px) {
+  .brasser, .verser {
+    width: 80%;
+  }
 }
 
 .verser > h3 {
@@ -306,6 +517,17 @@ a {
   align-items: center;
   width: 90%;
 }
+@media screen and (max-width: 950px) {
+  .section-bete {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .section-bete {
+    margin-left: 20px;
+  }
+}
 
 .bete {
   display: flex;
@@ -314,10 +536,34 @@ a {
   width: 60%;
   margin: 30px;
 }
+@media screen and (max-width: 870px) {
+  .bete {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .bete {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .explication {
   width: 60%;
   margin-left: 20px;
+}
+@media screen and (max-width: 580px) {
+  .explication {
+    width: 80%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+#section-utilisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photo-utilisation {
@@ -326,8 +572,13 @@ a {
   width: 100%;
   justify-content: center;
   align-content: center;
-  margin-left: 150px;
   margin-top: 100px;
+}
+@media screen and (max-width: 500px) {
+  .photo-utilisation {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .photo-utilisation-double {
@@ -336,10 +587,32 @@ a {
   width: 30%;
   height: 600px;
 }
+@media screen and (max-width: 990px) {
+  .photo-utilisation-double {
+    width: 30%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .photo-utilisation-double {
+    width: 60%;
+  }
+}
 
 .photo-utilisation-seule {
-  width: 50%;
+  width: 40%;
   height: 300px;
+}
+@media screen and (max-width: 990px) {
+  .photo-utilisation-seule {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .photo-utilisation-seule {
+    width: 70%;
+    display: contents;
+  }
 }
 
 .photo3 {
@@ -347,11 +620,51 @@ a {
   margin: 20px;
   border-radius: 30px;
 }
+@media screen and (max-width: 990px) {
+  .photo3 {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .photo3 {
+    height: 340px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .photo3 {
+    height: 240px;
+  }
+}
 
 .photo1, .photo2 {
   height: 300px;
   margin: 20px;
   border-radius: 30px;
+}
+@media screen and (max-width: 990px) {
+  .photo1, .photo2 {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .photo1, .photo2 {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .photo1, .photo2 {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .photo1, .photo2 {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .photo1, .photo2 {
+    height: 100px;
+  }
 }
 
 .utilisation-paragraphe {
@@ -360,7 +673,6 @@ a {
   align-self: center;
   text-align: center;
   width: 70%;
-  margin-left: 220px;
 }
 
 /*# sourceMappingURL=style2.css.map */
