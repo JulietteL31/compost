@@ -1,6 +1,12 @@
 // images des pages ok et non
 .img-ok {
     width: 20rem;
+    @media screen and (max-width:340px) {
+        width: 15rem;
+    }
+    @media screen and (max-width:260px) {
+        width: 10rem;
+    }
 }
 
 .img-non {
@@ -14,9 +20,17 @@
     align-items: center;
 }
 
+.titre > h2 {
+    text-align: center;
+}
+
 .titre-ok, .titre-non, .titre-geste {
     margin-top: -20px;
     font-size: 25px;
+    @media screen and (max-width:600px) {
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 // div cercles pages ok et non
@@ -27,6 +41,9 @@
     justify-content: center;
     width: 100%;
     margin-top: 100px;
+    @media screen and (max-width:340px) {
+        margin-top: 50px;
+    }
 }
 
 .cercle {
@@ -46,11 +63,24 @@
     text-align: center;
     width: 25%;
     margin: 30px;
+    @media screen and (max-width:1080px) {
+        width: 35%;
+        margin: 20px;
+    }
+    @media screen and (max-width:750px) {
+        width: 70%;
+    }
+    @media screen and (max-width:560px) {
+        width: 85%;
+    }
 }
 
 // images pages ok et non
 .image-ok {
     width: 100px;
+    @media screen and (max-width:340px) {
+        width: 70px;
+    }
 }
 
 // div étape page gestes
@@ -60,6 +90,9 @@
     margin-bottom: 20px;
     align-content: center;
     align-items: center;
+    @media screen and (max-width:450px) {
+        flex-direction: column;
+    }
 }
 
 // numéros encerclés page gestes
@@ -72,6 +105,9 @@
     text-align: center;
     margin-right: 20px;
     font-size: 30px;
+    @media screen and (max-width:450px) {
+        margin-right: 0;
+    }
 }
 
 // div description page gestes
@@ -83,5 +119,13 @@
     padding: 10px;
     color: white;
     font-size: 20px;
+    @media screen and (max-width:450px) {
+        margin-left: 0;
+        font-size: 17px;
+        width: 80%;
+    }
+    @media screen and (max-width:340px) {
+        font-size: 15px;
+    }
 }
 

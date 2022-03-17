@@ -3,11 +3,18 @@
     display: flex;
     align-items: center;
     margin-top: 100px;
+    @media screen and (max-width:890px) {
+        flex-direction: column;
+    }
 }
 
 #content2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    @media screen and (max-width:890px) {
+        flex-direction: column;
+    }
 }
 
 // index section div
@@ -21,6 +28,12 @@
     align-content: center;
     box-shadow: black 1px 1px 7px;
     padding: 20px;
+    @media screen and (max-width:1010px) {
+        margin: 50px;
+    }
+    @media screen and (max-width:890px) {
+        width: 60%;
+    }
 }
 
 .contenu2 {
@@ -36,14 +49,26 @@
     align-content: center;
     box-shadow: black 1px 1px 7px;
     padding: 20px;
+    @media screen and (max-width:1010px) {
+        margin: 50px;
+    }
+    @media screen and (max-width:890px) {
+        width: 60%;
+    }
 }
 
 .utilisation {
     margin-left: 100px;
+    @media screen and (max-width:890px) {
+        margin-left: 50px;
+    }
 }
 
 .betes {
     margin-right: 100px;
+    @media screen and (max-width:890px) {
+        margin-right: 50px;
+    }
 }
 
 // index section div titre
@@ -77,6 +102,10 @@
     width: 100%;
     align-items: flex-start;
     margin-top: 30px;
+    @media screen and (max-width:950px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .brasser, .verser {
@@ -90,6 +119,9 @@
     border: black solid;
     border-radius: 30px;
     padding: 10px;
+    @media screen and (max-width:950px) {
+        width: 80%;
+    }
 }
 
 .verser > h3 {
@@ -139,6 +171,13 @@
     justify-content: center;
     align-items: center;
     width: 90%;
+    @media screen and (max-width:950px) {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    @media screen and (max-width:580px) {
+        margin-left: 20px;
+    }
 }
 
 .bete {
@@ -147,22 +186,43 @@
     align-items: flex-start;
     width: 60%;
     margin: 30px;
+    @media screen and (max-width:870px) {
+        width: 90%;
+    }
+    @media screen and (max-width:580px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .explication {
     width: 60%;
     margin-left: 20px;
+    @media screen and (max-width:580px) {
+        width: 80%;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 // page utilisation photos
+#section-utilisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .photo-utilisation {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-content: center;
-    margin-left: 150px;
     margin-top: 100px;
+    @media screen and (max-width:500px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .photo-utilisation-double {
@@ -170,23 +230,61 @@
     flex-direction: column;
     width: 30%;
     height: 600px;
+    @media screen and (max-width:990px) {
+        width: 30%;
+        height: auto;
+    }
+    @media screen and (max-width:500px) {
+        width: 60%;
+    }
 }
 
 .photo-utilisation-seule {
-    width: 50%;
+    width: 40%;
     height: 300px;
+    @media screen and (max-width:990px) {
+        width: 30%;
+    }
+    @media screen and (max-width:500px) {
+        width: 70%;
+        display: contents;
+    }
 }
 
 .photo3 {
     height: 560px;
     margin: 20px;
     border-radius: 30px;
+    @media screen and (max-width:990px) {
+        height: 440px;
+    }
+    @media screen and (max-width:880px) {
+        height: 340px;
+    }
+    @media screen and (max-width:730px) {
+        height: 240px;
+    }
 }
 
 .photo1, .photo2 {
     height: 300px;
     margin: 20px;
     border-radius: 30px;
+    @media screen and (max-width:990px) {
+        height: 200px;
+    }
+    @media screen and (max-width:880px) {
+        height: 150px;
+    }
+    @media screen and (max-width:730px) {
+        height: 100px;
+    }
+    @media screen and (max-width:500px) {
+        height: 150px;
+    }
+    @media screen and (max-width:330px) {
+        height: 100px;
+    }
 }
 
 // page utilisation paragraphe
@@ -196,5 +294,4 @@
     align-self: center;
     text-align: center;
     width: 70%;
-    margin-left: 220px;
 }

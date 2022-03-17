@@ -3,6 +3,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width:730px) {
+        flex-direction: column;
+    }
+}
+
+.disposition-titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 .img-header {
@@ -15,14 +26,49 @@
     color: white;
     text-align: center;
     width: 90%;
+    @media screen and (max-width:600px) {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 35px;
+    }
+    @media screen and (max-width:340px) {
+        font-size: 25px;
+    }
 }
 
 .fleche {
     width: 50px;
     height: 50px;
+    @media screen and (max-width:600px) {
+        padding-right: 20px;
+        width: 35px;
+        height: 35px;
+    }
+    @media screen and (max-width:340px) {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .image-header {
+    width: 5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    @media screen and (max-width:730px) {
+        display: none;
+    }
+}
+
+.img-media-query {
+    display: none;
+    @media screen and (max-width:730px) {
+        display: block;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.img-header-media {
     width: 5rem;
     margin-left: 50px;
     margin-right: 50px;
@@ -55,6 +101,10 @@
 .contact {
     display: flex;
     justify-content: center;
+    @media screen and (max-width:650px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .logo-fb, .logo-mail {
@@ -69,16 +119,31 @@
     align-items: center;
     text-decoration: none;
     color: black;
+    @media screen and (max-width:650px) {
+        width: 90%;
+    }
+    @media screen and (max-width:315px) {
+        flex-direction: column;
+        font-size: 12px;
+    }
 }
 
 .fb {
     justify-content: flex-end;
     margin-right: 20px;
+    @media screen and (max-width:650px) {
+        margin-right: 0;
+        justify-content: center;
+    }
 }
 
 .mail {
     justify-content: flex-start;
     margin-left: 20px;
+    @media screen and (max-width:650px) {
+        margin-left: 0;
+        justify-content: center;
+    }
 }
 
 .p-footer {
