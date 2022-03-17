@@ -1,0 +1,12 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch main.scss:style2.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
+  
