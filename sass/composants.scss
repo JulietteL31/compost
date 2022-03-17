@@ -1,0 +1,87 @@
+// images des pages ok et non
+.img-ok {
+    width: 20rem;
+}
+
+.img-non {
+    width: 10rem;
+}
+
+// titre2 des pages
+.titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre-ok, .titre-non, .titre-geste {
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+// div cercles pages ok et non
+.oui, .non {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.cercle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.ok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 25%;
+    margin: 30px;
+}
+
+// images pages ok et non
+.image-ok {
+    width: 100px;
+}
+
+// div étape page gestes
+.etape {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+// numéros encerclés page gestes
+.num {
+    border-radius: 100%;
+    background-color: seagreen;
+    color: white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+// div description page gestes
+.des {
+    width: 60%;
+    background-color: seagreen;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+

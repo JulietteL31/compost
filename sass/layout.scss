@@ -1,0 +1,87 @@
+// header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-header {
+    width: 5%;
+}
+
+.titre-header {
+    font-family: 'Shrikhand';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.fleche {
+    width: 50px;
+    height: 50px;
+}
+
+.image-header {
+    width: 5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+// footer
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-compost {
+    width: 12rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-fb, .logo-mail {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.mail, .fb {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.fb {
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.mail {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.p-footer {
+    text-decoration: underline;
+}
+
