@@ -97,6 +97,11 @@ a {
   margin-left: 50px;
   margin-right: 50px;
 }
+@media screen and (max-width: 730px) {
+  .img-header-media {
+    margin: 0;
+  }
+}
 
 #footer {
   display: flex;
@@ -152,7 +157,7 @@ a {
 @media screen and (max-width: 315px) {
   .mail, .fb {
     flex-direction: column;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -338,6 +343,7 @@ a {
 @media screen and (max-width: 890px) {
   #content1 {
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 
@@ -371,6 +377,7 @@ a {
 @media screen and (max-width: 890px) {
   .contenu {
     width: 60%;
+    padding: 5px;
   }
 }
 
@@ -396,6 +403,7 @@ a {
 @media screen and (max-width: 890px) {
   .contenu2 {
     width: 60%;
+    padding: 5px;
   }
 }
 
@@ -421,6 +429,11 @@ a {
   text-align: center;
   color: green;
   font-size: 30px;
+}
+@media screen and (max-width: 890px) {
+  .titre2 {
+    margin-top: 0px;
+  }
 }
 
 .lien-accueil {
