@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cb8e7ae64b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Filtre: Ce que je ne peux pas composter</title>
+
+    <!-- <script src="./scripts/require.js"></script> -->
+    <script src="./scripts/compostable.js"></script>
+</head>
+<body onload="AjouterTout();">
+    <header class="header">
+        <div class="disposition-titre">
+        <a href="./index.html" class="img-header">
+        <img src="./photos/flèche.png" class="fleche">
+        </a>
+        <img src="./photos/cactus.png" class="image-header">
+        <h1 class="titre-header">Le parfait composteur</h1>
+        <img src="./photos/cactus2.png" class="image-header">
+        </div>
+    </header>
+    <section>
+        <div class="titre">
+            <img src="./photos/croix.png" alt=" dessin croix rouge" class="img-non">
+            <h2 class="titre-non">Ce que je ne peux pas composter</h2>
+        </div>
+        <input type="text" onkeyup="FiltertResult(this);">
+        <div class="non" id="filterResultContainer"></div>
+    </section>
+    <footer id="footer">
+        <div class="img">
+            <img src="./photos/compost.png" class="image-compost">
+        </div>
+        <div class="contact">
+            <a href="https://www.facebook.com/lescomposteursduclossaintsimon/" target="_blank" class="fb">
+                <img src="./photos/fb.png" class="logo-fb">
+                <p class="p-footer">Les composteurs du Clos Saint-Simon</p>
+            </a>
+            <a href="mailto:compostage.clos.saint.simon@gmail.com" class="mail">
+                <img src="./photos/mail.png" class="logo-mail">
+                <p class="p-footer">compostage.clos.saint.simon@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
