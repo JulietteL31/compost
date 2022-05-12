@@ -1,74 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/cb8e7ae64b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb8e7ae64b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <title>Le parfait composteur</title>
-</head>
-<body>
+  </head>
+  <body id="pageAccueil">
     <header class="header">
-        <img src="./photos/cactus.png" class="image-header">
+      <div class="titreHeader">
+        <img src="./photos/cactus.png" class="image-header" />
         <h1 class="titre-header">Le parfait composteur</h1>
-        <img src="./photos/cactus2.png" class="image-header">
+        <img src="./photos/cactus2.png" class="image-header" />
         <div class="img-media-query">
-            <img src="./photos/cactus.png" class="img-header-media">
-            <img src="./photos/cactus2.png" class="img-header-media">
+          <img src="./photos/cactus.png" class="img-header-media" />
+          <img src="./photos/cactus2.png" class="img-header-media" />
         </div>
+      </div>
+      <nav id="menu">
+        <div class="ongletMenu">
+          <a href="ok.html" class="lienMenu">
+            <h2 class="titreMenu">Ce que je peux composter</h2>
+          </a>
+        </div>
+        <div class="ongletMenu">
+          <a href="non.html" class="lienMenu">
+            <h2 class="titreMenu">Ce que je ne peux pas composter</h2>
+          </a>
+        </div>
+        <div class="ongletMenu">
+          <a href="gestes.html" class="lienMenu">
+            <h2 class="titreMenu">Les bons gestes à adopter</h2>
+          </a>
+        </div>
+        <div class="ongletMenu">
+          <a href="./betes.html" class="lienMenu">
+            <h2 class="titreMenu">Les bébêtes du compost</h2>
+          </a>
+        </div>
+        <div class="ongletMenu">
+          <a href="./utilisation.html" class="lienMenu">
+            <h2 class="titreMenu">Comment utiliser mon compost mûr ?</h2>
+          </a>
+        </div>
+      </nav>
     </header>
-    <section id="content1">
-        <div class="compost-ok contenu">
-            <a href="ok.html" class="lien-accueil">
-                <h2 class="titre2">Ce que je peux composter</h2>
-                <img src="./photos/coche.png" class="img-accueil">
-            </a>
-        </div>
-        <div class="compost-non contenu">
-            <a href="non.html" class="lien-accueil">
-                <h2 class="titre2">Ce que je ne peux pas composter</h2>
-                <img src="./photos/croix.png" class="img-accueil">
-            </a>
-        </div>
-        <div class="gestes contenu">
-            <a href="gestes.html" class="lien-accueil">
-                <h2 class="titre2">Les bons gestes à adopter</h2>
-                <img src="./photos/geste.png" class="img-accueil">
-            </a>
-        </div>
+    <!-- <section id="content1">
+      <div class="compost-ok contenu">
+        <a href="ok.html" class="lien-accueil">
+          <h2 class="titre2">Ce que je peux composter</h2>
+          <img src="./photos/coche.png" class="img-accueil" />
+        </a>
+      </div>
+      <div class="compost-non contenu">
+        <a href="non.html" class="lien-accueil">
+          <h2 class="titre2">Ce que je ne peux pas composter</h2>
+          <img src="./photos/croix.png" class="img-accueil" />
+        </a>
+      </div>
+      <div class="gestes contenu">
+        <a href="gestes.html" class="lien-accueil">
+          <h2 class="titre2">Les bons gestes à adopter</h2>
+          <img src="./photos/geste.png" class="img-accueil" />
+        </a>
+      </div>
+    </section> -->
+    <!-- <section id="content2">
+      <div class="betes contenu2">
+        <a href="./betes.html" class="lien-accueil">
+          <h2 class="titre2">Les bébêtes du compost</h2>
+          <img src="./photos/ver.png" class="img-accueil" />
+        </a>
+      </div>
+      <div class="utilisation contenu2">
+        <a href="./utilisation.html" class="lien-accueil">
+          <h2 class="titre2">Comment utiliser mon compost mûr ?</h2>
+          <img src="./photos/utilisation2.png" class="img-accueil" />
+        </a>
+      </div>
+    </section> -->
+    <section>
+      <div class="contenu-accueil">
+        <h3 class="apparition1 textIndex">Bienvenue sur le site dédié aux composteurs du Clos Saint-Simon !</h3>
+        <label for="compostable" class="textIndex labelInput apparition2">
+            Est-ce que je peux composter...
+        </label>
+        <input id="compostable" class="apparition3 inputText">
+        </input>
+        <!-- <p class="apparition2 textIndex">Ici vous trouverez :</p>
+        <p class="apparition3 textIndex">Une liste de ce que vous pouvez ou ne pouvez pas composter</p>
+        <p class="apparition4 textIndex">Un zoom sur les petites bêtes du compost</p>
+        <p class="apparition5 textIndex">Un rappel des bons gestes</p>
+        <p class="apparition6 textIndex">La manière d'utiliser le compost mûr</p> -->
+      </div>
     </section>
-    <section id="content2">
-        <div class="betes contenu2">
-            <a href="./betes.html" class="lien-accueil">
-                <h2 class="titre2">Les bébêtes du compost</h2>
-                <img src="./photos/ver.png" class="img-accueil">
-            </a>
-        </div>
-        <div class="utilisation contenu2">
-            <a href="./utilisation.html" class="lien-accueil">
-                <h2 class="titre2">Comment utiliser mon compost mûr ?</h2>
-                <img src="./photos/utilisation2.png" class="img-accueil">
-            </a>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="img">
-            <img src="./photos/compost.png" class="image-compost">
-        </div>
-        <div class="contact">
-            <a href="https://www.facebook.com/lescomposteursduclossaintsimon/" target="_blank" class="fb">
-                <img src="./photos/fb.png" class="logo-fb">
-                <p class="p-footer">Les composteurs du Clos Saint-Simon</p>
-            </a>
-            <a href="mailto:compostage.clos.saint.simon@gmail.com" class="mail">
-                <img src="./photos/mail.png" class="logo-mail">
-                <p class="p-footer">compostage.clos.saint.simon@gmail.com</p>
-            </a>
-        </div>
+    <footer id="footer" class="footer-index">
+      <div class="img">
+        <img src="./photos/compost.png" class="image-compost" />
+      </div>
+      <div class="contact">
+        <a
+          href="https://www.facebook.com/lescomposteursduclossaintsimon/"
+          target="_blank"
+          class="fb"
+        >
+          <img src="./photos/fb.png" class="logo-fb" />
+          <p class="p-footer">Les composteurs du Clos Saint-Simon</p>
+        </a>
+        <a href="mailto:compostage.clos.saint.simon@gmail.com" class="mail">
+          <img src="./photos/mail.png" class="logo-mail" />
+          <p class="p-footer">compostage.clos.saint.simon@gmail.com</p>
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
