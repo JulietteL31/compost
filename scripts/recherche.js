@@ -1,75 +1,4 @@
 
-// function FiltertResult(inputText)
-// {
-// 	let userFilter = inputText.value;
-// 	let contenu = FilterContent(userFilter);
-// 	let container = document.getElementById("filterResultContainer");
-// 	container.innerHTML = contenu;
-// }
-// function AjouterTout() {
-// 	let contenu = FilterContent("");
-// 	let container = document.getElementById("filterResultContainer");
-// 	container.innerHTML = contenu;
-// }
-
-function FilterContent(userFilter)
-{
-	// const jsonData = require(['./scripts/compostable.json']); 
-	let listCompostable = data.liste;
-    let userFilter = document.getElementById("inputText").value;
-
-	// console.log("ici: " + JSON.stringify(jsonData))
-	// let result = "";
-
-	for (let i = 0; i < listCompostable.length; i++) {
-		const item = listCompostable[i];
-		// let test = item.titre.contains();
-
-		if (item.titre.toLowerCase().includes(userFilter.toLowerCase()) || item.paragraph.toLowerCase().includes(userFilter.toLowerCase()))
-		{
-            let content = document.getElementById("filterResultContainer");
-           
-            let div = document.createElement("div");
-            div.classList.add("ok");
-
-            let cercle = document.createElement("div");
-            cercle.classList.add("cercle");
-            div.appendChild(cercle);
-
-            let image = document.createElement("img");
-            image.src = item.image;
-            image.altTxt = item.altText;
-            image.classList.add("image-ok");
-            cercle.appendChild(image);
-
-            let titre = document.createElement("h3");
-            titre.innerHTML = item.titre;
-            cercle.appendChild(titre);
-
-            let paragraphe = document.createElement("p");
-            paragraphe.innerHTML = item.paragraph;
-            div.appendChild(paragraphe);
-
-            content.appendChild(div);
-
-			// result += '<div class="ok">'
-			// result += '	<div class="cercle">'
-			// result += '		<img src="' + item.image + '" alt="' + item.altText + '" class="image-ok">'
-			// result += '		<h3>' + item.titre + '</h3>'
-			// result += '	</div>'
-			// result += '	<p>' + item.paragraph + '</p>'
-			// result += '</div>'
-		}
-        // else if (userFilter == "") {
-        //     result = "";
-        // }
-	}
-	// return result;
-	// console.log(result);
-}
-
-FilterContent(userFilter);
-
 const data = {
 	"liste": [
 		{
@@ -165,3 +94,61 @@ const data = {
 		}
 	]
 }
+
+let filterInput = document.getElementById("compostable");
+
+function FiltertResult(filterInput)
+{
+	let filter = filterInput.value;
+	let contenu = FilterContent(filter);
+	let container = document.getElementById("filterResultContainer");
+	container.innerHTML = contenu;
+}
+
+// function AjouterTout() {
+// 	let contenu = FilterContent("");
+// 	let container = document.getElementById("filterResultContainer");
+// 	container.innerHTML = contenu;
+// }
+
+
+function FilterContent(filter)
+{
+	let listCompostable = data.liste;
+
+	for (let i = 0; i < listCompostable.length; i++) {
+		const item = listCompostable[i];
+
+		if (item.titre.toLowerCase().includes(filter.toLowerCase()) || item.paragraph.toLowerCase().includes(filter.toLowerCase()))
+		{
+            let content = document.getElementById("filterResultContainer");
+           
+            let div = document.createElement("div");
+            div.classList.add("ok");
+
+            let cercle = document.createElement("div");
+            cercle.classList.add("cercle");
+            div.appendChild(cercle);
+
+            let image = document.createElement("img");
+            image.src = item.image;
+            image.altTxt = item.altText;
+            image.classList.add("image-ok");
+            cercle.appendChild(image);
+
+            let titre = document.createElement("h3");
+            titre.innerHTML = item.titre;
+            cercle.appendChild(titre);
+
+            let paragraphe = document.createElement("p");
+            paragraphe.innerHTML = item.paragraph;
+            div.appendChild(paragraphe);
+
+            content.appendChild(div);
+
+            console.log(div);
+		}
+	}
+}
+
+filterInput.addEventListener("change", FilterContent(""));
