@@ -1,0 +1,28 @@
+@keyframes apparition {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .apparition1 {
+    font-size: 30px;
+    opacity: 0;
+    animation: apparition 2000ms 500ms;
+    animation-fill-mode: forwards;
+  }
+  
+  .apparition2 {
+    opacity: 0;
+    animation: apparition 500ms 1500ms;
+    animation-fill-mode: forwards;
+  }
+  
+  .apparition3 {
+    opacity: 0;
+    animation: apparition 500ms 1500ms;
+    animation-fill-mode: forwards;
+  }
+  
