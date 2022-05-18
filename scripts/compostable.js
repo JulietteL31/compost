@@ -14,16 +14,11 @@ function AjouterTout() {
 
 function FilterContent(userFilter)
 {
-	// const jsonData = require(['./scripts/compostable.json']); 
 	let listCompostable = data.liste;
-
-
-	// console.log("ici: " + JSON.stringify(jsonData))
 	let result = "";
 
 	for (let i = 0; i < listCompostable.length; i++) {
 		const item = listCompostable[i];
-		// let test = item.titre.contains();
 
 		if (item.compostable == true) {
 		if (userFilter == "" || item.titre.toLowerCase().includes(userFilter.toLowerCase()) || item.paragraph.toLowerCase().includes(userFilter.toLowerCase()))
