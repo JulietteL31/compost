@@ -77,6 +77,32 @@
     }
 }
 
+//menu
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: green 1px solid;
+  }
+  
+  .ongletMenu {
+    padding: 10px;
+  }
+  
+  .ongletMenu:hover {
+    border-top: lightcoral 4px solid;
+    background-color: lemonchiffon;
+  }
+  
+  .lienMenu {
+    color: green;
+  }
+  
+  .titreMenu {
+    text-align: center;
+  }
+
 // footer
 #footer {
     display: flex;
@@ -97,8 +123,6 @@
     width: 12rem;
     margin-left: 200px;
     margin-right: 200px;
-    margin-bottom: 50px;
-
 }
 
 .contact {
@@ -152,4 +176,8 @@
 .p-footer {
     text-decoration: underline;
 }
+
+.footer-index {
+    background-color: rgba(0, 128, 0, 0.548);
+  }
 

@@ -17,7 +17,7 @@
     />
     <title>Le parfait composteur</title>
   </head>
-  <body id="pageAccueil">
+  <body id="pageAccueil" onload="FiltertContent();">
     <header class="header">
       <div class="titreHeader">
         <img src="./photos/cactus.png" class="image-header" />
@@ -56,54 +56,17 @@
         </div>
       </nav>
     </header>
-    <!-- <section id="content1">
-      <div class="compost-ok contenu">
-        <a href="ok.html" class="lien-accueil">
-          <h2 class="titre2">Ce que je peux composter</h2>
-          <img src="./photos/coche.png" class="img-accueil" />
-        </a>
-      </div>
-      <div class="compost-non contenu">
-        <a href="non.html" class="lien-accueil">
-          <h2 class="titre2">Ce que je ne peux pas composter</h2>
-          <img src="./photos/croix.png" class="img-accueil" />
-        </a>
-      </div>
-      <div class="gestes contenu">
-        <a href="gestes.html" class="lien-accueil">
-          <h2 class="titre2">Les bons gestes à adopter</h2>
-          <img src="./photos/geste.png" class="img-accueil" />
-        </a>
-      </div>
-    </section> -->
-    <!-- <section id="content2">
-      <div class="betes contenu2">
-        <a href="./betes.html" class="lien-accueil">
-          <h2 class="titre2">Les bébêtes du compost</h2>
-          <img src="./photos/ver.png" class="img-accueil" />
-        </a>
-      </div>
-      <div class="utilisation contenu2">
-        <a href="./utilisation.html" class="lien-accueil">
-          <h2 class="titre2">Comment utiliser mon compost mûr ?</h2>
-          <img src="./photos/utilisation2.png" class="img-accueil" />
-        </a>
-      </div>
-    </section> -->
     <section>
       <div class="contenu-accueil">
         <h3 class="apparition1 textIndex">Bienvenue sur le site dédié aux composteurs du Clos Saint-Simon !</h3>
         <label for="compostable" class="textIndex labelInput apparition2">
             Est-ce que je peux composter...
         </label>
-        <input id="compostable" class="apparition3 inputText">
+        <input id="compostable" class="apparition3 inputText" type="text">
         </input>
-        <!-- <p class="apparition2 textIndex">Ici vous trouverez :</p>
-        <p class="apparition3 textIndex">Une liste de ce que vous pouvez ou ne pouvez pas composter</p>
-        <p class="apparition4 textIndex">Un zoom sur les petites bêtes du compost</p>
-        <p class="apparition5 textIndex">Un rappel des bons gestes</p>
-        <p class="apparition6 textIndex">La manière d'utiliser le compost mûr</p> -->
       </div>
+    </section>
+    <section id="filterResultContainer">
     </section>
     <footer id="footer" class="footer-index">
       <div class="img">
@@ -124,5 +87,6 @@
         </a>
       </div>
     </footer>
+    <script src="./scripts/recherche.js"></script>
   </body>
 </html>

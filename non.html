@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>Ce que je ne peux pas composter</title>
 </head>
-<body>
+<body onload="AjouterTout();">
     <header class="header">
         <div class="disposition-titre">
         <a href="./index.html" class="img-header">
@@ -21,14 +21,47 @@
         <h1 class="titre-header">Le parfait composteur</h1>
         <img src="./photos/cactus2.png" class="image-header">
         </div>
+        <nav id="menu">
+            <div class="ongletMenu">
+              <a href="ok.html" class="lienMenu">
+                <h2 class="titreMenu">Ce que je peux composter</h2>
+              </a>
+            </div>
+            <div class="ongletMenu">
+              <a href="non.html" class="lienMenu">
+                <h2 class="titreMenu">Ce que je ne peux pas composter</h2>
+              </a>
+            </div>
+            <div class="ongletMenu">
+              <a href="gestes.html" class="lienMenu">
+                <h2 class="titreMenu">Les bons gestes à adopter</h2>
+              </a>
+            </div>
+            <div class="ongletMenu">
+              <a href="./betes.html" class="lienMenu">
+                <h2 class="titreMenu">Les bébêtes du compost</h2>
+              </a>
+            </div>
+            <div class="ongletMenu">
+              <a href="./utilisation.html" class="lienMenu">
+                <h2 class="titreMenu">Comment utiliser mon compost mûr ?</h2>
+              </a>
+            </div>
+          </nav>
     </header>
     <section>
         <div class="titre">
             <img src="./photos/croix.png" alt=" dessin croix rouge" class="img-non">
             <h2 class="titre-non">Ce que je ne peux pas composter</h2>
         </div>
-        <div class="non">
-            <div class="animaux ok">
+        <div class = "inputPages">
+            <label for="non-compostable" class="textIndex labelInput">
+                Recherche
+            </label>
+            <input id="non-compostable" class="inputText" type="text" onkeyup="FiltertResult(this);"></input>
+        </div>
+        <div class="non" id="filterResultContainer">
+            <!-- <div class="animaux ok">
                 <div class="cercle">
                     <img src="./photos/chat.png" alt="dessin silhouette chat" class="image-ok">
                     <h3>Les déchets animaux</h3>
@@ -62,7 +95,7 @@
                     <h3>Les résineux</h3>
                 </div>
                 <p>Ces plantes contiennent des inhibiteurs de croissance</p>
-            </div>
+            </div> -->
         </div>
     </section>
     <footer id="footer">
@@ -80,5 +113,6 @@
             </a>
         </div>
     </footer>
+    <script src="./scripts/non-compostable.js"></script>
 </body>
 </html>

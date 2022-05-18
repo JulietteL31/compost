@@ -129,3 +129,43 @@
     }
 }
 
+//accueil
+.textIndex {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  
+  .labelInput {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .inputText {
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  #pageAccueil {
+    background-color: white;
+  }
+
+  .titreHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 128, 0, 0.548);
+    width: 100%;
+  }
+
+  .header {
+      flex-direction: column;
+  }
+
+  .contenu-accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+

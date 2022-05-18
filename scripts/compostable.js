@@ -25,7 +25,8 @@ function FilterContent(userFilter)
 		const item = listCompostable[i];
 		// let test = item.titre.contains();
 
-		if (userFilter == "" || item.titre.toLowerCase().includes(userFilter.toLowerCase()))
+		if (item.compostable == true) {
+		if (userFilter == "" || item.titre.toLowerCase().includes(userFilter.toLowerCase()) || item.paragraph.toLowerCase().includes(userFilter.toLowerCase()))
 		{
 
 			result += '<div class="ok">'
@@ -37,7 +38,9 @@ function FilterContent(userFilter)
 			result += '</div>'
 		}
 	}
+	}
 	return result;
+	console.log(result);
 }
 
 const data = {
