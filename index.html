@@ -17,7 +17,7 @@
     />
     <title>Le parfait composteur</title>
   </head>
-  <body id="pageAccueil">
+  <body id="pageAccueil" onload="AjouterTout();">
     <header class="header">
       <div class="titreHeader">
         <img src="./photos/cactus.png" class="image-header" />
@@ -62,7 +62,7 @@
         <label for="compostable" class="textIndex labelInput apparition2">
             Est-ce que je peux composter...
         </label>
-        <input id="compostable" class="apparition3 inputText" type="text">
+        <input id="compostable" class="apparition3 inputText" type="text" onkeyup="FiltertResult(this);">
         </input>
       </div>
     </section>

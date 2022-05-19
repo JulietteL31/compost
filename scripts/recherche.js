@@ -105,11 +105,11 @@ function FiltertResult(filterInput)
 	container.innerHTML = contenu;
 }
 
-// function AjouterTout() {
-// 	let contenu = FilterContent("");
-// 	let container = document.getElementById("filterResultContainer");
-// 	container.innerHTML = contenu;
-// }
+function AjouterTout() {
+	let contenu = FilterContent("");
+	let container = document.getElementById("filterResultContainer");
+	container.innerHTML = contenu;
+}
 
 
 function FilterContent(filter)
@@ -119,12 +119,13 @@ function FilterContent(filter)
 	for (let i = 0; i < listCompostable.length; i++) {
 		const item = listCompostable[i];
 
-		if (item.titre.toLowerCase().includes(filter.toLowerCase()) || item.paragraph.toLowerCase().includes(filter.toLowerCase()))
+		if (item.titre.toLocaleLowerCase().includes(filter.toLocaleLowerCase()) || item.paragraph.toLocaleLowerCase().includes(filter.toLocaleLowerCase()))
 		{
             let content = document.getElementById("filterResultContainer");
            
             let div = document.createElement("div");
             div.classList.add("ok");
+            content.appendChild(div);
 
             let cercle = document.createElement("div");
             cercle.classList.add("cercle");
@@ -144,11 +145,22 @@ function FilterContent(filter)
             paragraphe.innerHTML = item.paragraph;
             div.appendChild(paragraphe);
 
-            content.appendChild(div);
-
             console.log(div);
-		}
+		} else {
+            let content = document.getElementById("filterResultContainer");
+            
+            let erreur = document.createElement("p");
+            erreur.classList.add("msg-error");
+            erreur.innerHTML = "Nous n'avons malheureusement pas trouvé ce que vous recherchez...";
+            content.appendChild(erreur);
+
+            let lien = document.createElement("a");
+            lien.classList.add("lien-mail");
+            lien.href = "mailto:compostage.clos.saint.simon@gmail.com";
+            lien.innerHTML = "Vous avez une question ? Contactez-nous !";
+            content.appendChild(lien);
+        }
 	}
 }
 
-filterInput.addEventListener("change", FilterContent(""));
+// filterInput.addEventListener("change", FilterContent());
