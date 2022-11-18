@@ -163,4 +163,4 @@ function FilterContent(filter)
 	}
 }
 
-// filterInput.addEventListener("change", FilterContent());
+filterInput.addEventListener("change", FilterContent);
