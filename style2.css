@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: white;
   max-width: 1500px;
@@ -13,12 +14,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: black solid 5px;
+  flex-direction: column;
 }
 @media screen and (max-width: 730px) {
   .header {
     flex-direction: column;
   }
+}
+
+.div-header-border {
+  width: 100%;
+  border-bottom: black solid 5px;
 }
 
 .disposition-titre {
@@ -34,11 +40,11 @@ a {
 }
 
 .titre-header {
-  font-family: "Shrikhand";
+  font-family: "Space Mono", monospace;
   font-size: 50px;
   color: black;
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
   .titre-header {
@@ -102,6 +108,95 @@ a {
   .img-header-media {
     margin: 0;
   }
+}
+
+#bouton {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: white;
+  z-index: 100000000;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 30%;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav ul ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: green;
+  border-bottom: 2px solid green;
+}
+
+.sous {
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  padding: 0;
+}
+
+nav > ul li:hover .sous {
+  display: block;
+}
+
+.sous li {
+  float: none;
+  width: 94%;
+  text-align: left;
+  padding: 0;
+}
+
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+  font-size: 19px;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after {
+  content: " ▼";
+  font-size: 12px;
 }
 
 #footer {
