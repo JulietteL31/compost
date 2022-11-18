@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: black solid 5px;
     @media screen and (max-width:730px) {
         flex-direction: column;
     }
@@ -23,7 +24,7 @@
 .titre-header {
     font-family: 'Shrikhand';
     font-size: 50px;
-    color: white;
+    color: black;
     text-align: center;
     width: 90%;
     @media screen and (max-width:600px) {
