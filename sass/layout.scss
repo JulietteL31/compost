@@ -27,7 +27,7 @@
 }
 
 .titre-header {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Aleo', serif;
     font-size: 50px;
     color: black;
     text-align: center;
@@ -133,7 +133,7 @@ nav a
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 nav a:hover
@@ -170,7 +170,7 @@ nav > ul li:hover .sous
 {
     padding: 10px;
     border-bottom: none;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .sous a:hover
@@ -189,9 +189,16 @@ nav > ul li:hover .sous
 #footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 60px;
     margin-bottom: 50px;
+    border-top: 5px black solid;
+    font-family: 'Aleo', serif;
+}
+
+.footer-paragraph > p {
+    text-align: center;
 }
 
 .img {
