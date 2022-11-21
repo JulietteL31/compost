@@ -254,3 +254,17 @@ function Content(itemSearch) {
 
 const bouton = document.getElementById("button-search");
 bouton.addEventListener('click', Content);
+
+
+
+let button = document.getElementById('bouton');
+let affiche = document.getElementById('display');
+let nav = document.getElementById('menu');
+
+button.addEventListener("click", () => {
+    if(getComputedStyle(nav).display != "block"){      
+      nav.style.display = "block";
+    } else {
+      nav.style.display = "none";
+    }
+  })

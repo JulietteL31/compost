@@ -49,6 +49,16 @@ a {
 .logo-header {
   width: 200px;
 }
+@media screen and (max-width: 714px) {
+  .logo-header {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo-header {
+    width: 130px;
+  }
+}
 
 .titre-header {
   font-family: "Aleo", serif;
@@ -126,30 +136,35 @@ a {
   display: none;
 }
 
-nav {
+.nav {
+  position: relative;
   width: 100%;
   padding-top: 10px;
   background-color: white;
-  margin: 0;
+  margin-top: 0;
   z-index: 100000000;
 }
 
 nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  padding: 0;
   list-style-type: none;
   background-color: white;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
 }
 
 nav ul li {
+  float: left;
   text-align: center;
   position: relative;
   background-color: white;
   position: sticky;
+}
+@media screen and (max-width: 1100px) {
+  nav ul li {
+    width: 20%;
+  }
 }
 
 nav ul ::after {
@@ -186,14 +201,13 @@ nav > ul li:hover .sous {
 
 .sous li {
   float: none;
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 
 .sous a {
   padding: 10px;
   border-bottom: none;
-  width: 90%;
 }
 
 .sous a:hover {
@@ -206,6 +220,107 @@ nav > ul li:hover .sous {
   font-size: 12px;
 }
 
+@media screen and (max-width: 800px) {
+  #bouton {
+    display: block;
+    font-size: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left: 40px;
+    padding-top: 30px;
+    z-index: 10000000000;
+  }
+
+  #display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul li {
+    text-align: start;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+    width: 25%;
+    margin-top: 50px;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+  }
+
+  .sous {
+    display: block;
+    position: relative;
+    box-shadow: unset;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .sous a {
+    padding: 5px;
+    padding-left: 0;
+  }
+
+  .element1 {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 683px) {
+  .nav {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 569px) {
+  .nav {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .nav {
+    width: 50%;
+  }
+}
+
+.cache {
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  .cache {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cache {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .cache > div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cache > div > p {
+  text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+  .cache2 {
+    display: none;
+  }
+}
+
 #footer {
   padding: 10px;
   display: flex;
@@ -214,6 +329,12 @@ nav > ul li:hover .sous {
   flex-direction: row;
   border-top: 3px black solid;
   font-family: "Aleo", serif;
+}
+@media screen and (max-width: 620px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #footer > div > p {
@@ -236,6 +357,11 @@ nav > ul li:hover .sous {
   color: black;
   scale: 0.9;
   transition-duration: 200ms;
+}
+@media screen and (max-width: 800px) {
+  .footer-paragraph > a {
+    padding: 7px;
+  }
 }
 
 .footer-paragraph > a:hover {
@@ -498,7 +624,6 @@ nav > ul li:hover .sous {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
   padding-bottom: 60px;
 }
 
@@ -510,6 +635,11 @@ nav > ul li:hover .sous {
   justify-content: center;
   padding: 30px;
   border-radius: 20px;
+}
+@media screen and (max-width: 800px) {
+  .text-welcome {
+    width: 90%;
+  }
 }
 .text-welcome-title {
   font-size: 28px;
@@ -546,6 +676,16 @@ nav > ul li:hover .sous {
 .text-welcome-list-item:hover {
   box-shadow: black 1px 1px 7px;
   scale: 1;
+}
+@media screen and (max-width: 800px) {
+  .text-welcome-list-item {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .text-welcome-list-item {
+    width: 80%;
+  }
 }
 
 #index-img {
@@ -1043,6 +1183,7 @@ nav > ul li:hover .sous {
 .liens-contacts-pros {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around;
   width: 100%;
@@ -1051,11 +1192,22 @@ nav > ul li:hover .sous {
 .div-contact-pro {
   width: 33%;
 }
+@media screen and (max-width: 800px) {
+  .div-contact-pro {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .div-contact-pro {
+    width: 100%;
+  }
+}
 
 h3 {
   font-size: 16px;
   text-decoration: underline;
   color: green;
+  text-align: center;
 }
 
 .liens {
@@ -1099,15 +1251,28 @@ h3 {
 .compostable-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   width: 70%;
+}
+@media screen and (max-width: 900px) {
+  .compostable-content {
+    width: 100%;
+  }
 }
 
 .compostable, .non-compostable {
   border-radius: 30px;
   padding: 20px;
   background-color: antiquewhite;
+  width: 33%;
+}
+@media screen and (max-width: 600px) {
+  .compostable, .non-compostable {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
 
 .compostable > a:hover {
@@ -1116,6 +1281,10 @@ h3 {
 
 .non-compostable > a:hover {
   text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style2.css.map */

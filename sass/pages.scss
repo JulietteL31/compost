@@ -24,7 +24,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
     padding-bottom: 60px;
 }
 
@@ -36,7 +35,9 @@
     justify-content: center;
     padding: 30px;
     border-radius: 20px;
-    // background-color: darkseagreen;
+    @media screen and (max-width:800px) {
+        width: 90%;
+    }
     &-title {
         font-size: 28px;
         text-align: center;
@@ -71,6 +72,12 @@
                 box-shadow: black 1px 1px 7px;
                 scale: 1;
                 // background-color: green;
+            }
+            @media screen and (max-width:800px) {
+                width: 60%;
+            }
+            @media screen and (max-width:540px) {
+                width: 80%;
             }
         }
     }
@@ -530,6 +537,7 @@
 .liens-contacts-pros {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
     width: 100%;
@@ -537,12 +545,19 @@
 
 .div-contact-pro {
     width: 33%;
+    @media screen and (max-width:800px) {
+        width: 50%;
+    }
+    @media screen and (max-width:530px) {
+        width: 100%;
+    }
 }
 
 h3 {
     font-size: 16px;
     text-decoration: underline;
     color: green;
+    text-align: center;
 }
 
 .liens {
@@ -589,15 +604,24 @@ h3 {
 .compostable-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     width: 70%;
+    @media screen and (max-width:900px) {
+        width: 100%;
+    }
 }
 
 .compostable, .non-compostable {
     border-radius: 30px;
     padding: 20px;
     background-color: antiquewhite;
+    width: 33%;
+    @media screen and (max-width:600px) {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 .compostable > a:hover {
@@ -606,4 +630,8 @@ h3 {
 
 .non-compostable > a:hover {
     text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
 }
