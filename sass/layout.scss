@@ -10,8 +10,14 @@
 }
 
 .div-header-border {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
-    border-bottom: black solid 5px;
+    border-bottom: black solid 3px;
 }
 
 .disposition-titre {
@@ -26,12 +32,17 @@
     width: 5%;
 }
 
+.logo-header {
+    width: 200px;
+}
+
 .titre-header {
     font-family: 'Aleo', serif;
     font-size: 50px;
     color: black;
-    text-align: center;
-    width: 100%;
+    text-align: right;
+    width: 70%;
+    margin-bottom: 0;
     @media screen and (max-width:600px) {
         width: 100%;
         margin-left: 0px;
@@ -90,33 +101,32 @@
 
 nav
 {
+    // position: fixed;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
     padding-top: 10px;
     background-color: white;
+    margin: 0;
     z-index: 100000000;
 }
 
 nav ul
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     list-style-type: none;
     background-color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li
 {
-    width: 30%;
     text-align: center;
     position: relative;
     background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    position: sticky;
 }
 
 nav ul ::after
@@ -133,7 +143,6 @@ nav a
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
-    font-size: 19px;
 }
 
 nav a:hover
@@ -150,7 +159,6 @@ nav a:hover
     position: absolute;
     width: 100%;
     z-index: 1000;
-    padding: 0;
 }
 
 nav > ul li:hover .sous
@@ -161,16 +169,15 @@ nav > ul li:hover .sous
 .sous li
 {
     float: none;
-    width: 94%;
+    width: 100%;
     text-align: left;
-    padding: 0;
 }
 
 .sous a
 {
     padding: 10px;
     border-bottom: none;
-    font-size: 17px;
+    width: 90%;
 }
 
 .sous a:hover
@@ -187,18 +194,40 @@ nav > ul li:hover .sous
 
 // footer
 #footer {
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    border-top: 3px black solid;
+    font-family: "Aleo", serif
+}
+
+#footer > div > p {
+    margin: 0;
+}
+
+.footer-paragraph {
+    display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    margin-bottom: 50px;
-    border-top: 5px black solid;
-    font-family: 'Aleo', serif;
+    align-items: center;
 }
 
 .footer-paragraph > p {
     text-align: center;
+}
+
+.footer-paragraph > a {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    scale: 0.9;
+    transition-duration: 200ms;
+}
+
+.footer-paragraph > a:hover {
+    font-weight: 600;
+    scale: 1;
 }
 
 .img {
