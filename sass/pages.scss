@@ -425,8 +425,21 @@
     flex-direction: row;
 }
 
+#search {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: none;
+    padding: 7px;
+    color: green;
+    font-weight: 600;
+}
+
 #button-search {
     cursor: pointer;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(0, 128, 0, 0.041);
+    font-weight: 600;
 }
 
 #search-result {
@@ -519,7 +532,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 50%;
+    @media screen and (max-width:530px) {
+        width: 90%;
+    }
 }
 
 .contact-pro {
@@ -664,4 +680,72 @@ h3 {
 
 h2 {
     text-align: center;
+}
+
+//Page actus
+#actu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.actus {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    &-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+        border: green solid 2px;
+        border-radius: 30px;
+        @media screen and (max-width:800px) {
+            flex-direction: column;
+        }
+        &-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            &-item {
+                width: 250px;
+                border-radius: 30px;
+                @media screen and (max-width:1000px) {
+                    width: 200px;
+                }
+                @media screen and (max-width:800px) {
+                    width: 150px;
+                }
+            }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 70%;
+            @media screen and (max-width:800px) {
+                width: 90%;
+                align-items: center;
+            }
+            & > p {
+                @media screen and (max-width:800px) {
+                    text-align: center;
+                }
+            }
+            &-contact > a {
+                text-decoration: underline;
+                color: black;
+                &:hover {
+                    color: green;
+                }
+            }
+        }
+    }
 }

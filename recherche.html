@@ -26,17 +26,19 @@
         <img src="./photos/logo-site.png" class="logo-header" alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes" />
         <h1 class="titre-header">Le parfait composteur</h1>
       </div>
-      <div id="bouton" class="apparition1">☰</div>
+      <div id="bouton" class="apparition1">
+        <button>☰</button>
+    </div>
       <nav id="menu" class="nav affichage">
         <ul id="display">
-          <li class="ongletMenu">
+          <li class="ongletMenu border-top">
             <a href="./index.html" class="lienMenu">Accueil</a>
           </li>
           <li class="nav__déroulant ongletMenu"><a href="#">Comment composter  ▼ &ensp;</a>
-            <ul class="sous">
-              <li><a href="ok.html">Ce que je peux composter</a></li>
-              <li><a href="non.html">Ce que je ne peux pas composter</a></li>
-              <li><a href="gestes.html">Les bons gestes à adopter</a></li>
+            <ul class="sous" id="sous">
+              <li class="affichage-mobile-padding"><a href="ok.html">Ce que je peux composter</a></li>
+              <li class="affichage-mobile-padding"><a href="non.html">Ce que je ne peux pas composter</a></li>
+              <li class="affichage-mobile-padding"><a href="gestes.html">Les bons gestes à adopter</a></li>
             </ul>
           </li>
           <li class="ongletMenu">
@@ -48,7 +50,7 @@
           <li class="ongletMenu">
             <a href="./recherche.html" class="lienMenu">Recherche</a>
           </li>
-          <li class="ongletMenu">
+          <li class="ongletMenu border-bottom">
             <a href="./contact.html" class="lienMenu">Contact</a>
           </li>
         </ul>

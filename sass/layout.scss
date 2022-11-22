@@ -266,6 +266,14 @@
     display: none;
 }
 
+#bouton > button {
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: rgba(0, 128, 0, 0.041);
+    border-radius: 30%;
+    border: black solid 2px;
+}
+
 .nav
 {
     position: relative;
@@ -364,11 +372,10 @@ nav > ul li:hover .sous
 @media screen and (max-width:800px) {
     #bouton {
         display: block;
-        font-size: 30px;
-        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        width: 90%;
         cursor: pointer;
-        margin-left: 40px;
-        padding-top: 30px;
         z-index: 10000000000;
     }
     #display {
@@ -379,14 +386,16 @@ nav > ul li:hover .sous
     .nav ul li {
         text-align: start;
         width: 100%;
+        padding-left: 7px;
+        background-color: rgba(0, 128, 0, 0.041);
     }
     .nav {
         display: none;
         width: 25%;
-        margin-top: 50px;
+        margin-top: 40px;
         position: absolute;
         top: 200px;
-        left: 40px;
+        left: 30px;
     }
     .sous {
         display: block;
@@ -395,6 +404,9 @@ nav > ul li:hover .sous
         padding: 0;
         margin-bottom: 10px;
     }
+    #sous > .affichage-mobile-padding {
+        padding-left: 0;
+    }
     .sous a {
         padding: 5px;
         padding-left: 0;
@@ -402,17 +414,34 @@ nav > ul li:hover .sous
     .element1 {
         padding-top: 10px;
     }
+    .border-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .border-bottom {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }
 
 .nav {
+    @media screen and (max-width:728px) {
+        margin-top: 60px;
+    }
     @media screen and (max-width:683px) {
         width: 30%;
+    }
+    @media screen and (max-width:601px) {
+        margin-top: 0;
+        left: 22px;
     }
     @media screen and (max-width:569px) {
         width: 35%;
     }
-    @media screen and (max-width:488px) {
+    @media screen and (max-width:490px) {
         width: 50%;
+        margin-top: 10px;
+        left: 20px;
     }
 }
 
