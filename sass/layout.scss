@@ -382,16 +382,16 @@ nav > ul li:hover .sous
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 300px;
     }
     .nav ul li {
         text-align: start;
-        width: 100%;
-        padding-left: 7px;
+        width: 300px;
         background-color: rgba(0, 128, 0, 0.041);
     }
     .nav {
         display: none;
-        width: 25%;
+        width: 300px;
         margin-top: 40px;
         position: absolute;
         top: 200px;
@@ -402,11 +402,10 @@ nav > ul li:hover .sous
         position: relative;
         box-shadow: unset;
         padding: 0;
-        margin-bottom: 10px;
     }
-    #sous > .affichage-mobile-padding {
-        padding-left: 0;
-    }
+    // #sous > .affichage-mobile-padding {
+    //     padding-left: 0;
+    // }
     .sous a {
         padding: 5px;
         padding-left: 0;
@@ -438,10 +437,19 @@ nav > ul li:hover .sous
     @media screen and (max-width:569px) {
         width: 35%;
     }
-    @media screen and (max-width:490px) {
-        width: 50%;
+}
+
+@media screen and (max-width:490px) {
+    .nav {
         margin-top: 10px;
         left: 20px;
+        width: 200px;
+    }
+    .nav ul li {
+        width: 200px;
+    }
+    #display {
+        width: 200px;
     }
 }
 

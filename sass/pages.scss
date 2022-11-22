@@ -55,6 +55,7 @@
     }
     &-img {
         width: 100px;
+        scale: 0.9;
     }
     &-title {
         font-size: 28px;
@@ -99,6 +100,23 @@
             }
         }
     }
+}
+
+.img-welcome {
+    animation: gros 2s infinite;
+}
+
+.img-new {
+    animation: tourne 2s infinite;
+    
+}
+
+.img-lettre {
+    animation: alterne 1s infinite;
+}
+
+.img-loupe {
+    animation: bouge 1s infinite;
 }
 
 .welcome2 {

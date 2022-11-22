@@ -1,0 +1,80 @@
+@keyframes gros {
+    0% {
+        scale: 0.9;
+    }
+    50% {
+        scale: 1.1;
+    }
+    0% {
+        scale: 0.9;
+    }
+}
+
+@keyframes tourne {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 360deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes alterne {
+    0% {
+        rotate: 0deg;
+    }
+    5% {
+        rotate: 10deg;
+    }
+    15% {
+        rotate: -10deg;
+    }
+    25% {
+        rotate: 10deg;
+    }
+    35% {
+        rotate: -10deg;
+    }
+    45% {
+        rotate: 10deg;
+    }
+    55% {
+        rotate: -10deg;
+    }
+    65% {
+        rotate: 10deg;
+    }
+    75% {
+        rotate: -10deg;
+    }
+    85% {
+        rotate: 10deg;
+    }
+    95% {
+        rotate: -10deg;
+    }
+    // 100% {
+    //     rotate: 0deg;
+    // }
+}
+
+@keyframes bouge {
+    0% {
+        margin-left: -15px;
+    }
+    25% {
+        margin-left: 15px;
+    }
+    50% {
+        margin-left: -15px;
+    }
+    75% {
+        margin-left: 15px;
+    }
+    100% {
+        margin-left: -15px;
+    }
+}

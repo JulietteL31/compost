@@ -1,4 +1,78 @@
 @charset "UTF-8";
+@keyframes gros {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.1;
+  }
+  0% {
+    scale: 0.9;
+  }
+}
+@keyframes tourne {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes alterne {
+  0% {
+    rotate: 0deg;
+  }
+  5% {
+    rotate: 10deg;
+  }
+  15% {
+    rotate: -10deg;
+  }
+  25% {
+    rotate: 10deg;
+  }
+  35% {
+    rotate: -10deg;
+  }
+  45% {
+    rotate: 10deg;
+  }
+  55% {
+    rotate: -10deg;
+  }
+  65% {
+    rotate: 10deg;
+  }
+  75% {
+    rotate: -10deg;
+  }
+  85% {
+    rotate: 10deg;
+  }
+  95% {
+    rotate: -10deg;
+  }
+}
+@keyframes bouge {
+  0% {
+    margin-left: -15px;
+  }
+  25% {
+    margin-left: 15px;
+  }
+  50% {
+    margin-left: -15px;
+  }
+  75% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: -15px;
+  }
+}
 body {
   background-color: white;
   max-width: 1500px;
@@ -242,18 +316,18 @@ nav > ul li:hover .sous {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 300px;
   }
 
   .nav ul li {
     text-align: start;
-    width: 100%;
-    padding-left: 7px;
+    width: 300px;
     background-color: rgba(0, 128, 0, 0.041);
   }
 
   .nav {
     display: none;
-    width: 25%;
+    width: 300px;
     margin-top: 40px;
     position: absolute;
     top: 200px;
@@ -265,11 +339,6 @@ nav > ul li:hover .sous {
     position: relative;
     box-shadow: unset;
     padding: 0;
-    margin-bottom: 10px;
-  }
-
-  #sous > .affichage-mobile-padding {
-    padding-left: 0;
   }
 
   .sous a {
@@ -312,14 +381,22 @@ nav > ul li:hover .sous {
     width: 35%;
   }
 }
+
 @media screen and (max-width: 490px) {
   .nav {
-    width: 50%;
     margin-top: 10px;
     left: 20px;
+    width: 200px;
+  }
+
+  .nav ul li {
+    width: 200px;
+  }
+
+  #display {
+    width: 200px;
   }
 }
-
 .cache {
   display: none;
 }
@@ -696,6 +773,7 @@ nav > ul li:hover .sous {
 }
 .text-welcome-img {
   width: 100px;
+  scale: 0.9;
 }
 .text-welcome-title {
   font-size: 28px;
@@ -742,6 +820,22 @@ nav > ul li:hover .sous {
   .text-welcome-list-item {
     width: 80%;
   }
+}
+
+.img-welcome {
+  animation: gros 2s infinite;
+}
+
+.img-new {
+  animation: tourne 2s infinite;
+}
+
+.img-lettre {
+  animation: alterne 1s infinite;
+}
+
+.img-loupe {
+  animation: bouge 1s infinite;
 }
 
 .welcome2 {
