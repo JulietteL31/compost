@@ -384,6 +384,9 @@ nav > ul li:hover .sous
         align-items: flex-start;
         width: 300px;
     }
+    .nav ul {
+        margin: 0;
+    }
     .nav ul li {
         text-align: start;
         width: 300px;
@@ -397,6 +400,9 @@ nav > ul li:hover .sous
         top: 200px;
         left: 30px;
     }
+    .nav a {
+        padding: 10px;
+    }
     .sous {
         display: block;
         position: relative;
@@ -408,7 +414,8 @@ nav > ul li:hover .sous
     // }
     .sous a {
         padding: 5px;
-        padding-left: 0;
+        padding-left: 15px;
+        font-size: 15.5px;
     }
     .element1 {
         padding-top: 10px;
