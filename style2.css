@@ -317,6 +317,7 @@ nav > ul li:hover .sous {
     flex-direction: column;
     align-items: flex-start;
     width: 300px;
+    border-radius: 20px;
   }
 
   .nav ul {
@@ -336,6 +337,7 @@ nav > ul li:hover .sous {
     position: absolute;
     top: 200px;
     left: 30px;
+    border-radius: 30px;
   }
 
   .nav a {
