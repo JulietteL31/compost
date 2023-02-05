@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb8e7ae64b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka+One&family=Space+Mono&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Le parfait composteur</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="div-header-border">
+        <img
+          src="./photos/logo-site.png"
+          class="logo-header"
+          alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes"
+        />
+        <h1 class="titre-header">Le parfait composteur</h1>
+      </div>
+      <div id="bouton" class="apparition1">
+        <button>☰</button>
+      </div>
+      <nav id="menu" class="nav affichage">
+        <ul id="display">
+          <li class="ongletMenu border-top">
+            <a href="./index.html" class="lienMenu">Accueil</a>
+          </li>
+          <li class="nav__déroulant ongletMenu">
+            <a href="#">Comment composter ▼ &ensp;</a>
+            <ul class="sous" id="sous">
+              <li class="affichage-mobile-padding">
+                <a href="ok.html">Ce que je peux composter</a>
+              </li>
+              <li class="affichage-mobile-padding">
+                <a href="non.html">Ce que je ne peux pas composter</a>
+              </li>
+              <li class="affichage-mobile-padding">
+                <a href="gestes.html">Les bons gestes à adopter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ongletMenu">
+            <a href="./betes.html" class="lienMenu">Les bébêtes du compost</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./utilisation.html" class="lienMenu"
+              >Comment utiliser mon compost mûr ?</a
+            >
+          </li>
+          <li class="ongletMenu">
+            <a href="./recherche.html" class="lienMenu">Recherche</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./actu.html" class="lienMenu">Actualités</a>
+          </li>
+          <li class="ongletMenu border-bottom">
+            <a href="./contact.html" class="lienMenu">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="quizz">
+      <h3>Quizz: comment et quoi composter ?</h3>
+      <form name="quizzDechet1" style="padding: 10px">
+        <div>
+          <h4>
+            1. J'ai fais une soupe et je voudrais mettre mes fanes de poireaux
+            au composteur, est-ce que je dois les couper en morceaux avant de
+            les jeter ?
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1Oui"
+                      class="correct"
+                      type="radio"
+                      name="answer1"
+                      aria-label="Bouton 'Oui' pour répondre à la question 1"
+                      value="Oui"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r1Oui" class="repVert1">Oui</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1Non"
+                      type="radio"
+                      name="answer1"
+                      aria-label="Bouton 'Non' pour répondre à la question 1"
+                      value="Non"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r1Non">Non</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep1"><p>Réponse : Oui, il est préférable de découper les fanes de poireaux, au moins en 2 ou en 3, pour faciliter leur décomposition et éviter qu'elles ne s'accrochent dans le brasse-compost !</p></div>
+        </div>
+        <div>
+          <h4>
+            2. J'ai une pomme moisie chez moi, est-ce que je peux la mettre
+            entière dans le composteur ?
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2Oui"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Bouton 'Oui' pour répondre à la question 2"
+                      value="Oui"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r2Oui">Oui</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2Non"
+                      class="correct"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Bouton 'Non' pour répondre à la question 2"
+                      value="Non"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r2Non" class="repVert2">Non</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep2"><p>Réponse : Non, les aliments ne doivent jamais être jetés entiers dans le composteur car leur peau les protège des insectes et les empêche donc de faire leur travail de décomposition. Dans le cas de la pomme, la couper simplement en 2 est suffisant.</p></div>
+        </div>
+        <div>
+          <h4>
+            3. Choisissez dans la liste le déchet à ne pas mettre au composteur:
+          </h4>
+          <div>
+            <select name="dechets" id="answer3" style="margin-left: 45px; border-radius: 30px; margin-bottom: 16px">
+              <option value="">--Veuillez choisir une option--</option>
+              <option value="noyau">Noyau d'abricot</option>
+              <option value="os">Arêtes et os</option>
+              <option value="pq">Rouleau de PQ</option>
+              <option value="mouchoir">Mouchoir</option>
+              <option value="sac" class="repVert3">Sac plastique bio-dégradable</option>
+              <option value="oeuf">Coquille d'oeuf</option>
+            </select>
+          </div>
+          <div class="bonneRep3"><p>Réponse : Sac plastique bio-dégradable. Ces sacs recyclés et "recyclables" sont de plus en plus courants. Ils sont peut-être biodégradables mais de manière extrêmement lente (plusieurs années), il est donc préférable de ne pas les composter.</p></div>
+        </div>
+        <div>
+          <h4>4. J'ai une boite d'oeufs vide, je :</h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-1"
+                      type="radio"
+                      name="answer4"
+                      aria-label="La jette telle quelle dans le composteur"
+                      value="La jette telle quelle dans le composteur"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-1">La jette telle quelle dans le composteur</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-2"
+                      class="correct"
+                      type="radio"
+                      name="answer4"
+                      aria-label="La coupe en morceaux et les mélange avec mes déchets à composter"
+                      value="La coupe en morceaux et les mélange avec mes déchets à composter"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-2" class="repVert4">La coupe en morceaux et les mélange avec mes déchets à composter</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-3"
+                      type="radio"
+                      name="answer4"
+                      aria-label="La met au recyclage"
+                      value="La met au recyclage"
+                      checked=""
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-3">La met au recyclage</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep4"><p>Réponse : Tout comme les fanes de poireaux et les fruits légumes moisis, les boites d'oeufs doivent être découpées en petits morceaux avant d'être jetées au composteur (cela vaut aussi pour les rouleaux de PQ, sopalin, sac kraft). Il est préférable de les composter plutôt que de les jeter dans la poubelle bleue car, étant déjà fabriquées en matière recyclée, elles ne peuvent plus être re recyclées de nouveau et sont donc brûlées, ce qui crée de la pollution supplémentaire !</p></div>
+        </div>
+        <div>
+            <h4>5. J'ai acheté une baguette mais je l'ai oubliée dans mon placard et résultat elle est toute dure, est-ce que je peux la composter ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-1"
+                              type="radio"
+                              name="answer5"
+                              aria-label="Oui, il suffit de la couper en petits morceaux et de tout mélanger aux autres déchets"
+                              value="Oui, il suffit de la couper en petits morceaux et de tout mélanger aux autres déchets"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-1">Oui, il suffit de la couper en petits morceaux et de tout mélanger aux autres déchets</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-2"
+                              type="radio"
+                              name="answer5"
+                              aria-label="Oui, je la jette entière sans la couper"
+                              value="Oui, je la jette entière sans la couper"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-2">Oui, je la jette entière sans la couper</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-3"
+                              class="correct"
+                              type="radio"
+                              name="answer5"
+                              aria-label="Oui, je la découpe en petits morceaux mais je ne jette pas tout d'un seul coup"
+                              value="Oui, je la découpe en petits morceaux mais je ne jette pas tout d'un seul coup"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-3" class="repVert5">Oui, je la découpe en petits morceaux mais je ne jette pas tout d'un seul coup</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-4"
+                              type="radio"
+                              name="answer5"
+                              aria-label="Non, le pain est mauvais pour le compost"
+                              value="Non, le pain est mauvais pour le compost"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-4">Non, le pain est mauvais pour le compost</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep5"><p>Réponse : Oui, il est possible de composter du pain mais en très petite quantité ! En effet, le pain en décomposition dégage des toxines très néfastes pour les petites bactéries de notre composteur. Nous recommandons donc de ne mettre que de petits morceaux et à une faible fréquence. Sachez par ailleurs qu'il existe plusieurs recettes anti-gaspi pour réutiliser votre pain rassis: pain perdu, chapelure, croutons, flan, toasts au four, ...</p></div>
+        </div>
+        <div>
+            <h4>6. Je viens de faire un barbecue, je peux jeter le charbon au composteur ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6Non"
+                              class="correct"
+                              type="radio"
+                              name="answer6"
+                              aria-label="Non"
+                              value="Non"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r6Non" class="repVert6">Non</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6Oui"
+                              type="radio"
+                              name="answer6"
+                              aria-label="Oui"
+                              value="Oui"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r6Oui">Oui</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep6"><p>Réponse : Non, en trop grande quantité la cendre va complètement déssécher le compost. Il est plus judicieux d'utiliser la cendre directement sur le sol.</p></div>
+        </div>
+        <div>
+            <h4>7. J'ai enfin reçu mon colis ! Qu'est-ce que je fais de la boite en carton brut ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-1"
+                              type="radio"
+                              name="answer7"
+                              aria-label="Je la jette dans la poubelle bleue"
+                              value="Je la jette dans la poubelle bleue"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-1">Je la jette dans la poubelle bleue</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-2"
+                              class="correct"
+                              type="radio"
+                              name="answer7"
+                              aria-label="Je la découpe en petits morceaux et je la jette dans le composteur"
+                              value="Je la découpe en petits morceaux et je la jette dans le composteur"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-2" class="repVert7">Je la découpe en petits morceaux et je la jette dans le composteur</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep7"><p>Réponse : Je la jette au composteur (si elle n'est plastifiée!), en la découpant bien en petits morceaux, toujours pour faciliter le travail des bactéries et des insectes du compost.</p></div>
+        </div>
+        <div>
+            <h4>8. Ca y est, Noel est passé, est-ce que je peux composter mon sapin ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-1"
+                              class="correct"
+                              type="radio"
+                              name="answer8"
+                              aria-label="Non"
+                              value="Non"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-1" class="repVert8">Non</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-2"
+                              type="radio"
+                              name="answer8"
+                              aria-label="Oui"
+                              value="Oui"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-2">Oui</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep8"><p>Réponse : Non, le sapin et plus généralement toutes les plantes de la famille des résineux contiennent des inhibiteurs de croissance et sont donc toxiques pour les insectes du compost.</p></div>
+        </div>
+        <div>
+            <h4>9. Lorsque je vais jeter mes déchets au composteur je :</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-1"
+                              class="correct"
+                              type="radio"
+                              name="answer9"
+                              aria-label="Creuse un cratère, y jette mes déchets, ajoute le brun puis referme le trou"
+                              value="Creuse un cratère, y jette mes déchets, ajoute le brun puis referme le trou"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-1" class="repVert9">Creuse un cratère, y jette mes déchets, ajoute le brun puis referme le trou</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-2"
+                              type="radio"
+                              name="answer9"
+                              aria-label="Jette tout en vrac sans rien faire de particulier"
+                              value="Jette tout en vrac sans rien faire de particulier"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-2">Jette tout en vrac sans rien faire de particulier</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-3"
+                              type="radio"
+                              name="answer9"
+                              aria-label="Je jette mes déchets puis les recouvre de brun"
+                              value="Je jette mes déchets puis les recouvre de brun"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-3">Jette mes déchets puis les recouvre de brun</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep9"><p>Réponse : Je creuse un cratère avant de faire mon apport en déchet et je referme bien le trou pour éviter les mauvaises odeurs, l'apparition de moucherons, et faciliter la décomposition !</p></div>
+        </div>
+        <div>
+            <h4>10. En temps normal (hors canicule), quelle quantité de brun dois-je mettre à chacun de mes apports ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-1"
+                              type="radio"
+                              name="answer10"
+                              aria-label="Même quantité de brun que de déchets"
+                              value="Même quantité de brun que de déchets"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-1">Même quantité de brun que de déchets</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-2"
+                              type="radio"
+                              name="answer10"
+                              aria-label="Je ne mets jamais de brun"
+                              value="Je ne mets jamais de brun"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-2">Je ne mets jamais de brun</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-3"
+                              class="correct"
+                              type="radio"
+                              name="answer10"
+                              aria-label="Pour 1 bio-seau de déchet, 1/2 bio-seau de brun"
+                              value="Pour 1 bio-seau de déchet, 1/2 bio-seau de brun"
+                              checked=""
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-3" class="repVert10">Pour 1 bio-seau de déchet, 1/2 bio-seau de brun</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep10"><p>Réponse : La quantité de brun ne doit pas excéder la moitié du volume de déchets (en période de canicule on peut descendre à 1/4, voir arrêter temporairement l'apport en brun pour éviter que le compost ne sèche). La transformation des déchets en compost s'effectue grâce au respect d'un équilibre entre azote (épluchures, viande, etc.) et carbone (matière sèche, brun).</p></div>
+        </div>
+      </form>
+      <div class="containButton"><button id="boutonForm">Valider</button></div>
+      <div id="total"><p class="afficheTotal"></p></div>
+      <div class="divLienPageQuizz"><a href="#" class="lienPageQuizz">Plus de quizz</a></div>
+    </section>
+
+    <footer id="footer">
+      <div class="cache2">
+        <p>Logo et dessins du site<br />@sketchify sur Canvas</p>
+      </div>
+      <div class="footer-paragraph">
+        <p>Une question sans réponse ?</p>
+        <a href="mailto:compostage.clos.saint.simon@gmail.com"
+          >Contactez-nous !</a
+        >
+        <a
+          href="https://www.facebook.com/lescomposteursduclossaintsimon/"
+          target="_blank"
+        >
+          <img src="./photos/fb.png" class="logo-fb" />
+        </a>
+      </div>
+      <div class="cache2">
+        <p>Designed by<br />Juliette Lega</p>
+      </div>
+      <div class="cache">
+        <div>
+          <p>Logo et dessins du site<br />@sketchify sur Canvas</p>
+        </div>
+        <div>
+          <p>Designed by<br />Juliette Lega</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/quizz.js"></script>
+  </body>
+</html>
