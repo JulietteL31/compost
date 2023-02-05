@@ -362,6 +362,11 @@ a {
   width: 70%;
   margin-bottom: 0;
 }
+@media screen and (max-width: 800px) {
+  .titre-header {
+    font-size: 42px;
+  }
+}
 @media screen and (max-width: 600px) {
   .titre-header {
     width: 100%;
@@ -436,6 +441,7 @@ a {
   background-color: rgba(0, 128, 0, 0.041);
   border-radius: 30%;
   border: black solid 2px;
+  cursor: pointer;
 }
 
 .nav {
@@ -562,6 +568,7 @@ nav > ul li:hover .sous {
 
   .nav a {
     padding: 10px;
+    width: 92%;
   }
 
   .sous {
@@ -593,7 +600,7 @@ nav > ul li:hover .sous {
 }
 @media screen and (max-width: 728px) {
   .nav {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 683px) {
@@ -603,12 +610,12 @@ nav > ul li:hover .sous {
 }
 @media screen and (max-width: 601px) {
   .nav {
-    margin-top: 0;
     left: 22px;
   }
 }
 @media screen and (max-width: 569px) {
   .nav {
+    margin-top: 20px;
     width: 35%;
   }
 }
@@ -628,6 +635,22 @@ nav > ul li:hover .sous {
     width: 200px;
   }
 }
+@media screen and (max-width: 468px) {
+  .nav {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 417.5px) {
+  .nav {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .nav {
+    margin-top: 50px;
+  }
+}
+
 .cache {
   display: none;
 }
