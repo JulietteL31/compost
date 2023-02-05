@@ -35,6 +35,10 @@
     align-items: center;
     justify-content: space-around;
     padding-bottom: 60px;
+    display: none;
+    @media screen and (max-width:600px) {
+        display: flex;
+    }
 }
 
 .text-welcome {
@@ -137,10 +141,18 @@
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 60px;
+    flex-direction: column;
+    @media screen and(max-width: 820px) {
+        margin-top: 120px;
+        padding-top: 0;
+    }
+    @media screen and(max-width: 600px) {
+        display: none;
+    }
 }
 
 #index-img > img {
-    width: 300px;
+    width: 400px;
 }
 
 // index section div
@@ -222,7 +234,203 @@
     height: 50px;
 }
 
-// page gestes 
+//index images composteur animation
+.img-index {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    @media screen and(max-width:820px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.trognon {
+    top: -400px;
+    left: 0;
+    animation: trognonTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+    @media screen and(max-width:820px) {
+        top: -520px;
+        left: 330px;
+        animation: trognonMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1200ms;
+        z-index: 1;
+    }
+}
+
+.salade {
+    top: -300px;
+    left: -100px;
+    animation: saladeTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2600ms;
+    @media screen and(max-width:820px) {
+        top: -520px;
+        left: 0;
+        animation: saladeMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2600ms;
+    }
+}
+
+.poisson {
+    top: -200px;
+    left: -100px;
+    animation: poissonTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2200ms;
+    @media screen and(max-width:820px) {
+        top: -520px;
+        left: 80px;
+        animation: poissonMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2200ms;
+    }
+}
+
+.orange {
+    top: -100px;
+    left: -50px;
+    animation: orangeTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1800ms;
+    @media screen and(max-width:820px) {
+        top: -520px;
+        left: 160px;
+        animation: orangeMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1800ms;
+        z-index: 2;
+    }
+}
+
+.paille {
+    top: -400px;
+    right: 0;
+    animation: pailleTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+    @media screen and(max-width:820px) {
+        top: -590px;
+        left: 0;
+        animation: pailleMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1000ms;
+    }
+}
+
+.coquilles {
+    top: -300px;
+    right: -100px;
+    animation: oeufTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+    z-index: 1;
+    @media screen and(max-width:820px) {
+        top: -590px;
+        left: 80px;
+        animation: oeufMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2000ms;
+    }
+}
+
+.carton {
+    top: -200px;
+    right: -100px;
+    animation: cartonTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2400ms;
+    @media screen and(max-width:820px) {
+        top: -590px;
+        left: 160px;
+        animation: cartonMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2400ms;
+    }
+}
+
+.cafe {
+    top: -100px;
+    right: -50px;
+    animation: cafeTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1400ms;
+    @media screen and(max-width:820px) {
+        top: -590px;
+        left: 240px;
+        animation: cafeMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1400ms;
+    }
+}
+
+.banane {
+    top: -250px;
+    left: 50px;
+    animation: bananeTranslate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1600ms;
+    z-index: 1;
+    @media screen and(max-width: 1020px) {
+        left: -10px;
+        animation: bananeTab 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1600ms;
+    }
+    @media screen and(max-width:820px) {
+        top: -520px;
+        left: 240px;
+        animation: bananeMobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 1600ms;
+    }
+}
+
+.carton2 {
+    top: -250px;
+    right: 50px;
+    animation: carton2Translate 600ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2800ms;
+    @media screen and(max-width: 1020px) {
+        right: 30px;
+        animation: carton2Tab 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2800ms;
+    }
+    @media screen and(max-width:820px) {
+        top: -590px;
+        left: 330px;
+        animation: carton2Mobile 600ms;
+        animation-fill-mode: forwards;
+        animation-delay: 2800ms;
+    }
+}
+
+
+.container-img-index {
+    position: relative;
+    width: 800px;
+    margin-top: 30px;
+    @media screen and(max-width: 1020px) {
+        width: 600px;
+    }
+    @media screen and(max-width:820px) {
+        width: 400px;
+        margin-top: 80px;
+    }
+}
+
+
+#text-index > p {
+    text-align: center;
+}
+
+// PAGE GESTES 
 .image-geste {
     width: 10rem;
 }
@@ -766,4 +974,84 @@ h2 {
             }
         }
     }
+}
+
+//QUIZZ
+//mise en forme de l'affichage des bonnes réponses après validation du quizz
+.bonneRep1, .bonneRep2, .bonneRep3, .bonneRep4, .bonneRep5, .bonneRep6, .bonneRep7, .bonneRep8, .bonneRep9, .bonneRep10 {
+    display: none;
+    font-style: italic;
+    font-weight: 200;
+    border: grey solid 1px;
+    border-radius: 30px;
+    padding-left: 7px;
+}
+
+//bouton validation quizz
+.containButton {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#boutonForm {
+    margin: 16px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px;
+}
+
+//mise en forme de l'affichage du message personnalisé en fonction du résultat
+#total {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.msgPerso {
+    text-align: center;
+}
+
+
+//PAGE TOUS LES QUIZZ
+#tousLesQuizz {
+    margin-bottom: 30px;
+}
+
+.tousLesQuizz {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quizz {
+    display: flex;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.lienTest {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
 }

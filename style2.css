@@ -327,6 +327,11 @@ a {
   width: 98%;
   border-bottom: black solid 3px;
 }
+@media screen and (max-width: 600px) {
+  .div-header-border {
+    flex-direction: column;
+  }
+}
 
 .disposition-titre {
   display: flex;
@@ -611,18 +616,17 @@ nav > ul li:hover .sous {
 @media screen and (max-width: 601px) {
   .nav {
     left: 22px;
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 569px) {
   .nav {
-    margin-top: 20px;
     width: 35%;
   }
 }
 
 @media screen and (max-width: 490px) {
   .nav {
-    margin-top: 10px;
     left: 20px;
     width: 200px;
   }
@@ -637,7 +641,7 @@ nav > ul li:hover .sous {
 }
 @media screen and (max-width: 468px) {
   .nav {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 417.5px) {
@@ -812,6 +816,16 @@ nav > ul li:hover .sous {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 600px) {
+  .div-header-border {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titre-header {
+    text-align: center;
+  }
+}
 .img-ok {
   width: 20rem;
 }
@@ -983,7 +997,7 @@ nav > ul li:hover .sous {
 }
 
 .divTestBtn {
-  width: 30%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -997,6 +1011,7 @@ nav > ul li:hover .sous {
   font-size: 18px;
   padding: 12px;
   box-shadow: 2px 2px 10px grey;
+  cursor: pointer;
 }
 
 .btnTest > a {
@@ -1057,6 +1072,12 @@ nav > ul li:hover .sous {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 60px;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #content4 {
+    display: flex;
+  }
 }
 
 .text-welcome {
@@ -1173,6 +1194,11 @@ nav > ul li:hover .sous {
   #index-img {
     margin-top: 120px;
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #index-img {
+    display: none;
   }
 }
 
