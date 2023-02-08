@@ -439,6 +439,18 @@ a {
 #bouton {
   display: none;
 }
+@media screen and (max-width: 600px) {
+  #bouton {
+    margin-top: -220px;
+    margin-bottom: 170px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #bouton {
+    margin-top: -185px;
+    margin-bottom: 170px;
+  }
+}
 
 #bouton > button {
   font-size: 20px;
@@ -616,7 +628,7 @@ nav > ul li:hover .sous {
 @media screen and (max-width: 601px) {
   .nav {
     left: 22px;
-    margin-top: 100px;
+    margin-top: -120px;
   }
 }
 @media screen and (max-width: 569px) {
@@ -639,22 +651,6 @@ nav > ul li:hover .sous {
     width: 200px;
   }
 }
-@media screen and (max-width: 468px) {
-  .nav {
-    margin-top: 100px;
-  }
-}
-@media screen and (max-width: 417.5px) {
-  .nav {
-    margin-top: 100px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .nav {
-    margin-top: 50px;
-  }
-}
-
 .cache {
   display: none;
 }

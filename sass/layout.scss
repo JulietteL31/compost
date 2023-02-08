@@ -108,6 +108,14 @@
 
 #bouton {
     display: none;
+    @media screen and(max-width:600px) {
+        margin-top: -220px;
+        margin-bottom: 170px;
+    }
+    @media screen and(max-width:340px) {
+        margin-top: -185px;
+        margin-bottom: 170px;
+    }
 }
 
 #bouton > button {
@@ -287,7 +295,7 @@ nav > ul li:hover .sous
     }
     @media screen and (max-width:601px) {
         left: 22px;
-        margin-top: 100px;
+        margin-top: -120px;
     }
     @media screen and (max-width:569px) {
         width: 35%;
@@ -307,17 +315,17 @@ nav > ul li:hover .sous
     }
 }
 
-.nav {
-    @media screen and(max-width:468px) {
-        margin-top: 100px;
-    }
-    @media screen and (max-width:417.5px) {
-        margin-top: 100px;
-    }
-    @media screen and (max-width:340px) {
-        margin-top: 50px;
-    }
-}
+// .nav {
+//     @media screen and(max-width:468px) {
+//         margin-top: 100px;
+//     }
+//     @media screen and (max-width:417.5px) {
+//         margin-top: 100px;
+//     }
+//     @media screen and (max-width:340px) {
+//         margin-top: 50px;
+//     }
+// }
 
 
 // footer
