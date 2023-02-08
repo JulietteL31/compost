@@ -1006,6 +1006,7 @@ nav > ul li:hover .sous {
 .btnTest {
   border-radius: 30px;
   background-color: darkolivegreen;
+  border: darkolivegreen;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -1021,8 +1022,12 @@ nav > ul li:hover .sous {
 
 .divLienPageQuizz {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .lienPageQuizz {
@@ -1030,6 +1035,14 @@ nav > ul li:hover .sous {
   font-size: 18px;
   text-decoration: underline;
   font-weight: bold;
+  width: auto;
+}
+
+.doigtquizz {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: -60px;
 }
 
 #content1 {
@@ -1779,6 +1792,7 @@ nav > ul li:hover .sous {
   padding: 7px;
   color: green;
   font-weight: 600;
+  cursor: auto;
 }
 
 #button-search {
@@ -2134,6 +2148,8 @@ h2 {
   font-weight: bold;
   font-size: 17px;
   padding: 5px;
+  border: green;
+  cursor: pointer;
 }
 
 #total {
@@ -2153,6 +2169,7 @@ h2 {
 
 .tousLesQuizz {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
@@ -2172,15 +2189,64 @@ h2 {
   justify-content: center;
   padding: 10px;
 }
+@media screen and (max-width: 950px) {
+  .quizz {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quizz {
+    width: 80%;
+  }
+}
 
 .lienTest {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 10px;
   font-size: 22px;
   font-weight: bold;
   margin: 10px;
   text-align: center;
   text-decoration: underline;
   color: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.imgquizz {
+  width: 100px;
+  height: 100px;
+}
+
+.container-imgpagequizz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imgpagequizz {
+  width: 150px;
+  height: 150px;
+}
+
+.pquizz {
+  margin-top: -20px;
+  font-style: italic;
+  font-size: smaller;
+}
+
+input {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style2.css.map */

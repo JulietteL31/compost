@@ -19,17 +19,29 @@ message.appendChild(messagePerso);
 //récup boutons radio choix correct dans le DOM
 let choixCorrect = document.querySelectorAll('.correct');
 
+//récup boutons checkbox question 10
+let correctRep101 = document.querySelector('.correct101');
+let correctRep102 = document.querySelector('.correct102');
+
+//récup boutons checkbox question 5
+let correctRep51 = document.querySelector('.correctRep51');
+let correctRep52 = document.querySelector('.correctRep52');
+let correctRep53 = document.querySelector('.correctRep53');
+
 //récup label bonnes réponses dans DOM pour modifier leur couleur au clic
 let repVert1 = document.querySelector('.repVert1');
 let repVert2 = document.querySelector('.repVert2');
 let repVert3 = document.querySelector('.repVert3');
 let repVert4 = document.querySelector('.repVert4');
 let repVert5 = document.querySelector('.repVert5');
+let repVert52 = document.querySelector('.repVert52');
+let repVert53 = document.querySelector('.repVert53');
 let repVert6 = document.querySelector('.repVert6');
 let repVert7 = document.querySelector('.repVert7');
 let repVert8 = document.querySelector('.repVert8');
 let repVert9 = document.querySelector('.repVert9');
 let repVert10 = document.querySelector('.repVert10');
+let repVert101 = document.querySelector('.repVert101');
 
 //récup bonnes réponses dans le DOM
 let bonneRep = document.querySelector('.bonneRep1');
@@ -58,12 +70,24 @@ function ValidForm() {
         }
     }
 
-    if(document.quizzDechet1.dechets.selectedIndex == 5) {
+    console.log(correctRep101.checked)
+    if(correctRep101.checked && correctRep102.checked) {
+        total = Number(total) + 1;
+    } else {
+        totel = Number(total);
+    }
+
+    if(correctRep51.checked && correctRep52.checked && correctRep53.checked) {
+        total = Number(total) + 1;
+    } else {
+        totel = Number(total);
+    }
+
+    if(document.quizzBetes.dechets.selectedIndex == 3) {
         total = Number(total) + 1
     } else {
         total = Number(total);
     }
-
 
     if(total <= 0) {
         total = 0;
