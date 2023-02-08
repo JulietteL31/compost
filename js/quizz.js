@@ -88,14 +88,11 @@ function ValidForm() {
         repVert3.style.color = 'green';
         repVert4.style.color = 'green';
         repVert5.style.color = 'green';
-        repVert52.style.color = 'green';
-        repVert53.style.color = 'green';
         repVert6.style.color = 'green';
         repVert7.style.color = 'green';
         repVert8.style.color = 'green';
         repVert9.style.color = 'green';
         repVert10.style.color = 'green';
-        repVert101.style.color = 'green';
      }
 
      if(total === 10) {
