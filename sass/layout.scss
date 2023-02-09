@@ -157,7 +157,7 @@ nav ul li
     position: relative;
     background-color: white;
     position: sticky;
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 900px) {
         width: 20%;
     }
 }
@@ -194,10 +194,13 @@ nav a:hover
     z-index: 1000;
 }
 
-nav > ul li:hover .sous
-{
-    display: block;
-}
+// nav > ul li:hover .sous
+// {
+//     display: block;
+//     @media screen and(max-width:800px) {
+//         display: none;
+//     }
+// }
 
 .sous li
 {
@@ -210,6 +213,7 @@ nav > ul li:hover .sous
 {
     padding: 10px;
     border-bottom: none;
+    width: 90%;
 }
 
 .sous a:hover
@@ -318,6 +322,52 @@ nav > ul li:hover .sous
     }
 }
 
+.fleche-menu-anim {
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    transition: transform 500ms;
+    margin-left: 7px;
+    @media screen and(max-width:800px) {
+        transform: rotate(90deg);
+        transition: none;
+    }
+}
+
+.contain-fleche {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media screen and(max-width:800px) {
+        justify-content: flex-start;
+    }
+}
+
+// .contain-fleche:hover .fleche-menu-anim {
+//     transform: rotate(180deg);
+//     @media screen and(max-width:800px) {
+//         transform: none;
+//     }
+// }
+
+.fleche-menu-anim {
+    @media screen and(max-width:800px) {
+        transform: rotate(90deg);
+        animation: flecheMenu 500ms;
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@media screen and(max-width: 800px) {
+    .sousQuizz, .sousInfos {
+        display: none;
+    }
+}
+
 // .nav {
 //     @media screen and(max-width:468px) {
 //         margin-top: 100px;
@@ -374,6 +424,7 @@ nav > ul li:hover .sous
     flex-direction: row;
     border-top: 3px black solid;
     font-family: "Aleo", serif;
+    background-color: seagreen;
     @media screen and (max-width:620px) {
         flex-direction: column;
         align-items: center;
@@ -386,12 +437,14 @@ nav > ul li:hover .sous
 
 .footer-paragraph {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 
 .footer-paragraph > p {
     text-align: center;
+    color: white;
 }
 
 .footer-paragraph > a {
@@ -400,6 +453,7 @@ nav > ul li:hover .sous
     color: black;
     scale: 0.9;
     transition-duration: 200ms;
+    color: white;
     @media screen and (max-width:800px) {
         padding: 7px;
     }
@@ -409,6 +463,21 @@ nav > ul li:hover .sous
     font-weight: 600;
     scale: 1;
 }
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-div-titre > h4 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+
 
 .img {
     display: flex;
@@ -438,6 +507,8 @@ nav > ul li:hover .sous
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    background-color: white;
+    border-radius: 30px;
 }
 
 .mail, .fb {
