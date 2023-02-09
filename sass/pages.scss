@@ -209,10 +209,7 @@
 }
 
 .utilisation {
-    margin-left: 100px;
-    @media screen and (max-width:890px) {
-        margin-left: 50px;
-    }
+    width: 80%;
 }
 
 .betes {
@@ -647,6 +644,17 @@
     width: 70%;
 }
 
+.utilisation-cat {
+    border: solid 1px green;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.utilisation-cat-p {
+    text-align: center;
+}
+
 //page recherche
 #content-search {
     display: flex;
@@ -740,6 +748,7 @@
     border: antiquewhite solid 3px;
     border-radius: 120px;
     padding: 20px;
+    width: auto;
 }
 
 .itemContent {

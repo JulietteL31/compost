@@ -1360,12 +1360,7 @@ nav a:hover {
 }
 
 .utilisation {
-  margin-left: 100px;
-}
-@media screen and (max-width: 890px) {
-  .utilisation {
-    margin-left: 50px;
-  }
+  width: 80%;
 }
 
 .betes {
@@ -1863,6 +1858,17 @@ nav a:hover {
   width: 70%;
 }
 
+.utilisation-cat {
+  border: solid 1px green;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.utilisation-cat-p {
+  text-align: center;
+}
+
 #content-search {
   display: flex;
   flex-direction: column;
@@ -1955,6 +1961,7 @@ nav a:hover {
   border: antiquewhite solid 3px;
   border-radius: 120px;
   padding: 20px;
+  width: auto;
 }
 
 .itemContent {

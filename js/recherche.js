@@ -23,7 +23,7 @@ const Liste = [
         "image": "./photos/compost-sac.png",
         "altText": "dessin sac plastique",
         "titre": "Les matériaux non-dégradables",
-        "paragraph": "Sacs plastiques \"recyclables\", sachets de thé contenant du plastique, mégots de cigarette",
+        "paragraph": "Sac plastique \"recyclable\", sachets de thé contenant du plastique, mégots de cigarette",
         "compostable": false,
         "indication": "Je ne dois pas composter",
         "imgIndication": "./photos/croix.png"
@@ -32,7 +32,7 @@ const Liste = [
         "image": "./photos/compost-plante.png",
         "altText": "photo plante rampante",
         "titre": "Les plantes rampantes",
-        "paragraph": "Liseron ou chiendent par exemple. Ces plantes sont capables de résister à des températures élevées et d'envahir les alentours du composteur",
+        "paragraph": "Liseron, chiendent, misère, entre autres. Ces plantes sont capables de résister à des températures élevées et d'envahir les alentours du composteur",
         "compostable": false,
         "indication": "Je ne dois pas composter",
         "imgIndication": "./photos/croix.png"
@@ -41,7 +41,7 @@ const Liste = [
         "image": "./photos/compost-sapin.png",
         "altText": "photo sapin",
         "titre": "Les résineux",
-        "paragraph": "Ces plantes contiennent des inhibiteurs de croissance",
+        "paragraph": "Les plantes de la famille des résineux (sapin) contiennent des inhibiteurs de croissance",
         "compostable": false,
         "indication": "Je ne dois pas composter",
         "imgIndication": "./photos/croix.png"
@@ -114,6 +114,15 @@ const Liste = [
         "altText": "dessin carton d'emballage",
         "titre": "Le carton brut",
         "paragraph": "Penser à <b>découper avant de jeter</b>: boites d'oeufs, carton marron, sac kraft, rouleaux de PQ",
+        "compostable": true,
+        "indication": "Je peux composter",
+        "imgIndication": "./photos/coche.png"
+    },
+    {
+        "image": "./photos/agrumes.png",
+        "altText": "dessins d'agrumes",
+        "titre": "Les agrumes",
+        "paragraph": "On pense souvent que les agrumes (orange, pamplemousse, citron, clémentine) ne sont pas compostables. Pourtant les agrumes se décomposent très bien, pas d'inquiétude !",
         "compostable": true,
         "indication": "Je peux composter",
         "imgIndication": "./photos/coche.png"
