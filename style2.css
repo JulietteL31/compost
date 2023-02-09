@@ -2248,4 +2248,13 @@ select {
   cursor: pointer;
 }
 
+.imgresulttest {
+  width: 70px;
+  height: 70px;
+}
+
+.profil {
+  padding: 10px;
+}
+
 /*# sourceMappingURL=style2.css.map */
