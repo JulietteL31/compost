@@ -301,6 +301,17 @@
     transform: rotate(180deg);
   }
 }
+@keyframes interrogation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   background-color: white;
   max-width: 1500px;
@@ -699,7 +710,26 @@ nav a:hover {
   .sousQuizz, .sousInfos {
     display: none;
   }
+
+  .sous a {
+    font-weight: bold;
+  }
 }
+.sousQuizz {
+  width: 120px;
+  margin-left: -20px;
+}
+@media screen and (max-width: 900px) {
+  .sousQuizz {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sousQuizz {
+    width: 100%;
+  }
+}
+
 .cache {
   display: none;
 }
@@ -1143,17 +1173,16 @@ nav a:hover {
 
 #content4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
   justify-content: space-around;
   padding-bottom: 60px;
-  display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #content4 {
-    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -1163,19 +1192,27 @@ nav a:hover {
   width: 22%;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 12px;
+  border-radius: 45px;
   border: black solid 1px;
   margin: 7px;
+  height: 350px;
 }
 @media screen and (max-width: 1100px) {
   .text-welcome {
     width: 40%;
+    height: 290px;
   }
 }
 @media screen and (max-width: 800px) {
   .text-welcome {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 604px) {
+  .text-welcome {
     width: 70%;
+    height: auto;
   }
 }
 .text-welcome-img {
@@ -1190,6 +1227,7 @@ nav a:hover {
   font-size: 19px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 0;
 }
 .text-welcome-list {
   display: flex;
@@ -1213,6 +1251,7 @@ nav a:hover {
   scale: 0.9;
   text-decoration: none;
   color: black;
+  margin-top: 0;
 }
 .text-welcome-list-item:hover {
   box-shadow: black 1px 1px 7px;
@@ -1231,18 +1270,6 @@ nav a:hover {
 
 .img-welcome {
   animation: gros 2s infinite;
-}
-
-.img-new {
-  animation: tourne 2s infinite;
-}
-
-.img-lettre {
-  animation: alterne 1s infinite;
-}
-
-.img-loupe {
-  animation: bouge 1s infinite;
 }
 
 .welcome2 {
@@ -1590,6 +1617,10 @@ nav a:hover {
     width: 400px;
     margin-top: 80px;
   }
+}
+
+#text-index {
+  padding: 20px;
 }
 
 #text-index > p {

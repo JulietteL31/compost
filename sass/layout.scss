@@ -366,6 +366,20 @@ nav a:hover
     .sousQuizz, .sousInfos {
         display: none;
     }
+    .sous a {
+        font-weight: bold;
+    }
+}
+
+.sousQuizz {
+    width: 120px;
+    margin-left: -20px;
+    @media screen and(max-width:900px) {
+        margin-left: 0;
+    }
+    @media screen and(max-width: 800px) {
+        width: 100%;
+    }
 }
 
 // .nav {
