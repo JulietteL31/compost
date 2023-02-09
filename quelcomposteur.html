@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb8e7ae64b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka+One&family=Space+Mono&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Les composteurs du Clos Saint-Simon</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="div-header-border">
+        <img
+          src="./photos/logo-site.png"
+          class="logo-header"
+          alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes"
+        />
+        <h1 class="titre-header">Les composteurs du Clos Saint-Simon</h1>
+      </div>
+      <div id="bouton" class="apparition1">
+        <button>☰</button>
+      </div>
+      <nav id="menu" class="nav affichage">
+        <ul id="display">
+          <li class="ongletMenu border-top">
+            <a href="./index.html" class="lienMenu">Accueil</a>
+          </li>
+          <li class="nav__déroulant ongletMenu">
+            <a href="#">Comment composter ▼ &ensp;</a>
+            <ul class="sous" id="sous">
+              <li class="affichage-mobile-padding">
+                <a href="ok.html">Ce que je peux composter</a>
+              </li>
+              <li class="affichage-mobile-padding">
+                <a href="non.html">Ce que je ne peux pas composter</a>
+              </li>
+              <li class="affichage-mobile-padding">
+                <a href="gestes.html">Les bons gestes à adopter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="ongletMenu">
+            <a href="./betes.html" class="lienMenu">Les bébêtes du compost</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./utilisation.html" class="lienMenu"
+              >Comment utiliser mon compost mûr ?</a
+            >
+          </li>
+          <li class="ongletMenu">
+            <a href="./recherche.html" class="lienMenu">Recherche</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./actu.html" class="lienMenu">Actualités</a>
+          </li>
+          <li class="ongletMenu border-bottom">
+            <a href="./contact.html" class="lienMenu">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="quizz">
+      <h3>Quizz: Quel composteur es-tu ?</h3>
+      <div class="container-imgpagequizz">
+        <img src="./photos/quizz/quelcomposteur.png" class="imgpagequizz"/>
+      </div>
+      <form name="quizzBetes" style="padding: 10px">
+        <div>
+          <h4>
+            1. Tu vides ton bio-seau...
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1-1"
+                      type="radio"
+                      class="minutieux"
+                      name="answer1"
+                      aria-label="1 fois par semaine"
+                      value="1 fois par semaine"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1-1">1 fois par semaine</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1-2"
+                      type="radio"
+                      class="investi"
+                      name="answer1"
+                      aria-label="Tous les 3 jours"
+                      value="Tous les 3 jours"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1-2">Tous les 3 jours</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1-3"
+                      type="radio"
+                      class="concerne"
+                      name="answer1"
+                      aria-label="Quand il est bien plein"
+                      value="Quand il est bien plein"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1-3">Seulement quand il est bien plein</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1-4"
+                      type="radio"
+                      class="flemmard"
+                      name="answer1"
+                      aria-label="Quand tu y penses, et c'est pas souvent"
+                      value="Quand tu y penses, et c'est pas souvent"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1-4">Quand tu y penses (et c'est pas souvent!)</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            </div>
+        </div>
+        <div>
+          <h4>
+            2. Quand tu vas au composteur...
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2-1"
+                      type="radio"
+                      class="flemmard"
+                      name="answer2"
+                      aria-label="Tu jettes tes déchets en tas sur le dessus"
+                      value="Tu jettes tes déchets en tas sur le dessus"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2-1">Tu jettes tes déchets en tas sur le dessus</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2-2"
+                      type="radio"
+                      class="concerne"
+                      name="answer2"
+                      aria-label="Tu regardes s'il y a de nouveaux affichages"
+                      value="Tu regardes s'il y a de nouveaux affichages"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2-2">Tu regardes s'il y a de nouveaux affichages</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2-3"
+                      type="radio"
+                      class="minutieux"
+                      name="answer2"
+                      aria-label="Tu appliques scrupuleusement les recommendations : creuser un trou, jeter les déchets, ajouter le brun et reboucher"
+                      value="Tu appliques scrupuleusement les recommendations : creuser un trou, jeter les déchets, ajouter le brun et reboucher"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2-3">Tu appliques scrupuleusement les recommendations : creuser un trou, jeter les déchets, ajouter le brun et reboucher</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2-4"
+                      class="investi"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Tu vérifies que le site est en bon état (matériel, compost propre, réserve de brun) et au besoin tu nettoies ou prévient l'équipe référente"
+                      value="Tu vérifies que le site est en bon état (matériel, compost propre, réserve de brun) et au besoin tu nettoies ou prévient l'équipe référente"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2-4">Tu vérifies que le site est en bon état (matériel, compost propre, réserve de brun) et au besoin tu nettoies ou prévient l'équipe référente</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>
+            3. Un jour d'été, tu t'apperçois que le compost est très sec, que fais-tu ?
+          </h4>
+          <div>
+            <ul>
+                <li style="list-style-type: none">
+                  <div
+                    class="answer3"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: baseline;
+                      align-items: center;
+                    "
+                  >
+                    <div style="padding-right: 5px">
+                      <input
+                        id="r3-1"
+                        type="radio"
+                        class="concerne"
+                        name="answer3"
+                        aria-label="Tu ne mets pas de brun lors de ton apport"
+                        value="Tu ne mets pas de brun lors de ton apport"
+                      />
+                    </div>
+                    <div>
+                      <label for="r3-1">Tu ne mets pas de brun lors de ton apport</label>
+                    </div>
+                  </div>
+                </li>
+                <li style="list-style-type: none">
+                  <div
+                    class="answer3"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: baseline;
+                      align-items: center;
+                    "
+                  >
+                    <div style="padding-right: 5px">
+                      <input
+                        id="r3-2"
+                        type="radio"
+                        class="investi"
+                        name="answer3"
+                        aria-label="Tu ne mets pas de brun et tu prends un moment pour arroser le composteur"
+                        value="Tu ne mets pas de brun et tu prends un moment pour arroser le composteur"
+                      />
+                    </div>
+                    <div>
+                      <label for="r3-2">Tu ne mets pas de brun et tu prends un moment pour arroser le composteur</label>
+                    </div>
+                  </div>
+                </li>
+                <li style="list-style-type: none">
+                  <div
+                    class="answer3"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: baseline;
+                      align-items: center;
+                    "
+                  >
+                    <div style="padding-right: 5px">
+                      <input
+                        id="r3-3"
+                        type="radio"
+                        class="flemmard"
+                        name="answer3"
+                        aria-label="Tu fais ton apport comme d'habitude sans te poser de question"
+                        value="Tu fais ton apport comme d'habitude sans te poser de question"
+                      />
+                    </div>
+                    <div>
+                      <label for="r3-3">Tu fais ton apport comme d'habitude sans te poser de question</label>
+                    </div>
+                  </div>
+                </li>
+                <li style="list-style-type: none">
+                  <div
+                    class="answer3"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: baseline;
+                      align-items: center;
+                    "
+                  >
+                    <div style="padding-right: 5px">
+                      <input
+                        id="r3-4"
+                        class="minutieux"
+                        type="radio"
+                        name="answer3"
+                        aria-label="Tu avertis l'équipe référente"
+                        value="Tu avertis l'équipe référente"
+                      />
+                    </div>
+                    <div>
+                      <label for="r3-4">Tu avertis l'équipe référente</label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div>
+          <h4>4. Tu viens de recevoir un mail t'informant d'un événement en lien avec le composteur, tu...</h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-1"
+                      type="radio"
+                      class="flemmard"
+                      name="answer4"
+                      aria-label="Te dis que ça a l'air intéressant puis tu oublies d'y aller"
+                      value="Te dis que ça a l'air intéressant puis tu oublies d'y aller"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-1">Te dis que ça a l'air intéressant puis tu oublies d'y aller</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-2"
+                      type="radio"
+                      class="minutieux"
+                      name="answer4"
+                      aria-label="Renvoies un mail pour confirmer ta présence"
+                      value="Renvoies un mail pour confirmer ta présence"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-2">Renvoies un mail pour confirmer ta présence</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-3"
+                      type="radio"
+                      class="investi"
+                      name="answer4"
+                      aria-label="Te proposes pour aider à organiser"
+                      value="Te proposes pour aider à organiser"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-3">Te proposes pour aider à organiser</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-4"
+                      type="radio"
+                      class="concerne"
+                      name="answer4"
+                      aria-label="Demandes s'il faut apporter quelque chose"
+                      value="Demandes s'il faut apporter quelque chose"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-4">Demandes s'il faut apporter quelque chose</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+            <h4>5. Les outils de compostage :</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-1"
+                              type="radio"
+                              class="investi"
+                              name="answer5"
+                              aria-label="Tu les connais et les utilises régulièrement"
+                              value="Tu les connais et les utilises régulièrement"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-1">Tu les connais et les utilises régulièrement</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-2"
+                              type="radio"
+                              class="minutieux"
+                              name="answer5"
+                              aria-label="Tu ne connais que la griffe"
+                              value="Tu ne connais que la griffe"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-2">Tu ne connais que la griffe</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-3"
+                              class="concerne"
+                              type="radio"
+                              name="answer5"
+                              aria-label="Tu as souvent vu un gros tir-bouchon à côté du bac et tu voudrais apprendre à t'en servir"
+                              value="Tu as souvent vu un gros tir-bouchon à côté du bac et tu voudrais apprendre à t'en servir"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-3">Tu as souvent vu un gros tir-bouchon à côté du bac et tu voudrais apprendre à t'en servir</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-4"
+                              type="radio"
+                              class="flemmard"
+                              name="answer5"
+                              aria-label="Il y a des outils ?"
+                              value="Il y a des outils ?"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-4">Il y a des outils ?</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>6. Il n'y a plus de brun, tu...</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6-1"
+                              class="investi"
+                              type="radio"
+                              name="answer6"
+                              aria-label="Vas en piquer dans le parc d'à côté"
+                              value="Vas en piquer dans le parc d'à côté"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6-1">Vas en piquer dans le parc d'à côté</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6-2"
+                              type="radio"
+                              class="concerne"
+                              name="answer6"
+                              aria-label="Préviens l'équipe référente"
+                              value="Préviens l'équipe référente"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6-2">Préviens l'équipe référente</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6-3"
+                              type="radio"
+                              class="flemmard"
+                              name="answer6"
+                              aria-label="Fais ton apport sans mettre de brun"
+                              value="Fais ton apport sans mettre de brun"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6-3">Fais ton apport sans mettre de brun</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6-4"
+                              type="radio"
+                              class="minutieux"
+                              name="answer6"
+                              aria-label="Ne fais pas ton apport et attends le réapprovisionnement"
+                              value="Ne fais pas ton apport et attends le réapprovisionnement"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6-4">Ne fais pas ton apport et attends le réapprovisionnement</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>7. Tu viens d'apprendre que tu as accès à des formations gratuites sur le compostage, tu...</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-1"
+                              type="radio"
+                              class="minutieux"
+                              name="answer7"
+                              aria-label="Te renseignes auprès des référents sur les formations disponibles et garde ça dans un coin de ta tête"
+                              value="Te renseignes auprès des référents sur les formations disponibles et garde ça dans un coin de ta tête"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-1">Te renseignes auprès des référents sur les formations disponibles et garde ça dans un coin de ta tête</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-2"
+                              type="radio"
+                              class="concerne"
+                              name="answer7"
+                              aria-label="T'inscris à la formation utilisateur"
+                              value="T'inscris à la formation utilisateur"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-2" class="repVert7">T'inscris à la formation utilisateur</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-3"
+                              class="flemmard"
+                              type="radio"
+                              name="answer7"
+                              aria-label="Trouves que c'est une bonne initiative mais ne t'inscris pas"
+                              value="Trouves que c'est une bonne initiative mais ne t'inscris pas"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-3">Trouves que c'est une bonne initiative mais ne t'inscris pas</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-4"
+                              type="radio"
+                              class="investi"
+                              name="answer7"
+                              aria-label="Te renseignes pour devenir référent"
+                              value="Te renseignes pour devenir référent"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-4">Te renseignes pour devenir référent</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>8. Tu as entendu quelque part que les sacs plastiques bio-dégradables peuvent se composter, tu...</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-1"
+                              class="minutieux"
+                              type="radio"
+                              name="answer8"
+                              aria-label="Cherches plus d'informations sur le sujet avant de faire quoi que ce soit"
+                              value="Cherches plus d'informations sur le sujet avant de faire quoi que ce soit"
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-1" class="repVert8">Cherches plus d'informations sur le sujet avant de faire quoi que ce soit</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-2"
+                              type="radio"
+                              class="concerne"
+                              name="answer8"
+                              aria-label="Ne prêtes pas attention à cette information: tu sais que les sacs plastiques quels qu'ils soient ne se compostent pas"
+                              value="Ne prêtes pas attention à cette information: tu sais que les sacs plastiques quels qu'ils soient ne se compostent pas"
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-2">Ne prêtes pas attention à cette information: tu sais que les sacs plastiques quels qu'ils soient ne se compostent pas</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-3"
+                              type="radio"
+                              class="flemmard"
+                              name="answer8"
+                              aria-label="Ne te poses pas de question. Logique: bio-dégradable = compostable."
+                              value="Ne te poses pas de question. Logique: bio-dégradable = compostable."
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-3">Ne te poses pas de question. Logique: bio-dégradable = compostable.</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-4"
+                              type="radio"
+                              class="investi"
+                              name="answer8"
+                              aria-label="Avertis l'équipe référente qu'il faudrait communiquer à ce sujet"
+                              value="Avertis l'équipe référente qu'il faudrait communiquer à ce sujet"
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-4">Avertis l'équipe référente qu'il faudrait communiquer à ce sujet</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>9. Un soir alors que tu viens faire un apport, tu t'apperçois que le bac est fermé avec un cadenas, que fais-tu ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-1"
+                              type="radio"
+                              class="flemmard"
+                              name="answer9"
+                              aria-label="Tu jettes le contenu de ton bio-seau à la poubelle, tant pis."
+                              value="Tu jettes le contenu de ton bio-seau à la poubelle, tant pis."
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-1">Tu jettes le contenu de ton bio-seau à la poubelle, tant pis.</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-2"
+                              type="radio"
+                              class="minutieux"
+                              name="answer9"
+                              aria-label="Tu remontes ton bio-seau et espères que le bac rouvrira bientôt"
+                              value="Tu remontes ton bio-seau et espères que le bac rouvrira bientôt"
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-2">Tu remontes ton bio-seau et espères que le bac rouvrira bientôt</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-3"
+                              type="radio"
+                              class="concerne"
+                              name="answer9"
+                              aria-label="Tu te renseignes sur la raison de cette fermeture"
+                              value="Tu te renseignes sur la raison de cette fermeture"
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-3">Tu te renseignes sur la raison de cette fermeture</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-4"
+                              type="radio"
+                              class="investi"
+                              name="answer9"
+                              aria-label="Tu demandes aux référents si tu peux te rendre utile afin que le problème soit réglé le plus rapidement possible"
+                              value="Tu demandes aux référents si tu peux te rendre utile afin que le problème soit réglé le plus rapidement possible"
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-4">Tu demandes aux référents si tu peux te rendre utile afin que le problème soit réglé le plus rapidement possible</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h4>10. Tu as oublié une baguette de pain et résultat elle est toute dure, que fais-tu ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-1"
+                              type="radio"
+                              class="minutieux"
+                              name="answer10"
+                              aria-label="Tu la coupes en petits morceaux et jettes tout d'un coup au composteur"
+                              value="Tu la coupes en petits morceaux et jettes tout d'un coup au composteur"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-1">Tu la coupes en petits morceaux et jettes tout d'un coup au composteur</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-2"
+                              type="radio"
+                              class="flemmard"
+                              name="answer10"
+                              aria-label="Tu la jettes telle quelle, de toute façon ça va se décomposer"
+                              value="Tu la jettes telle quelle, de toute façon ça va se décomposer"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-2">Tu la jettes telle quelle, de toute façon ça va se décomposer</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-3"
+                              class="concerne"
+                              type="radio"
+                              name="answer10"
+                              aria-label="Tu la coupes en petits morceaux mais ne jettes pas tout d'un seul coup"
+                              value="Tu la coupes en petits morceaux mais ne jettes pas tout d'un seul coup"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-3" class="repVert10">Tu la coupes en petits morceaux mais ne jettes pas tout d'un seul coup</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-4"
+                              type="radio"
+                              class="investi"
+                              name="answer10"
+                              aria-label="Tu cherches des recettes pour valoriser le pain rassis, c'est tout de même de la nourriture et c'est dommage de jeter"
+                              value="Tu cherches des recettes pour valoriser le pain rassis, c'est tout de même de la nourriture et c'est dommage de jeter"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-4">Tu cherches des recettes pour valoriser le pain rassis, c'est tout de même de la nourriture et c'est dommage de jeter</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+        </div>
+      </form>
+      <div class="containButton"><button id="boutonForm">Valider</button></div>
+      <div id="total"><p class="afficheTotal"></p></div>
+      <div class="divLienPageQuizz">
+        <img src="./photos/quizz/doigt.png" class="doigtquizz"/>
+        <a href="touslesquizz.html" class="lienPageQuizz">Plus de quizz</a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="cache2">
+        <p>Logo et dessins du site<br />@sketchify sur Canvas</p>
+      </div>
+      <div class="footer-paragraph">
+        <p>Une question sans réponse ?</p>
+        <a href="mailto:compostage.clos.saint.simon@gmail.com"
+          >Contactez-nous !</a
+        >
+        <a
+          href="https://www.facebook.com/lescomposteursduclossaintsimon/"
+          target="_blank"
+        >
+          <img src="./photos/fb.png" class="logo-fb" />
+        </a>
+      </div>
+      <div class="cache2">
+        <p>Designed by<br />Juliette Lega</p>
+      </div>
+      <div class="cache">
+        <div>
+          <p>Logo et dessins du site<br />@sketchify sur Canvas</p>
+        </div>
+        <div>
+          <p>Designed by<br />Juliette Lega</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/quizzcomposteur.js"></script>
+  </body>
+</html>
